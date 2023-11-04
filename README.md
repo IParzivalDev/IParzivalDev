@@ -2,7 +2,8 @@
 ¡Hola! Te doy la bienvenida a mi página de **GitHub**, Soy **Parzival**, ¡tengo experiencia en varias áreas del **desarrollo** y la **programación**!
 
 ### HTML/CSS
-    <html>
+```html
+<html>
 	<head>
 		<title>Mi Página web</title>
 	</head>
@@ -10,11 +11,12 @@
 		<h1>Nivel: 90%</h1>
 	</body>
 	<style>
-		h1{
-			color:red;
-		}
+	h1{
+		color:red;
+	}
 	</style>
-    </html>
+</html>
+```
 
 ### JAVASCRIPT
     const miFuncion = function() => {
