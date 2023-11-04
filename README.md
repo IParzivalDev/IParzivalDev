@@ -11,62 +11,69 @@
 		<h1>Nivel: 90%</h1>
 	</body>
 	<style>
-	h1{
-		color:red;
-	}
+		h1{
+			color:red;
+		}
 	</style>
 </html>
 ```
 
 ### JAVASCRIPT
-    const miFuncion = function() => {
+```javascript
+const miFuncion = function() => {
 	console.log("Nivel: 70%")
-	}
+}
+```
 
 ### PYTHON
-    def mi_funcion():
+```
+def mi_funcion():
 	print("Nivel: 87%")
+```
 
 ### C++
+```
+#include <iostream>
 
-	#include <iostream>
+using namespace std;
 
-	using namespace std;
-
-	int main() {
-	  cout << "Nivel 40%" << endl;
-	  return 0;
-	}
+int main() {
+	cout << "Nivel 40%" << endl;
+	return 0;
+}
+```
 
 ### JAVA
-
-    public class Main {
-	  public static void main(String[] args) {
-	    System.out.print("Nivel 40%");
-	  }
+```java
+public class Main {
+	public static void main(String[] args) {
+		System.out.print("Nivel 40%");
 	}
+}
+```
 
 ### BATCH
-
-	@echo off
-	
-	echo Nivel 40%
+```batch
+@echo off
+echo Nivel 40%
+```
 
 ### LINUX
+```linux
+┌──(iparzivaldev㉿IParzivalDev)-[~]  
+└─$ sudo apt-get update
+	
+┌──(iparzivaldev㉿IParzivalDev)-[~]  
+└─$ sudo apt-get upgrade
 
-	┌──(iparzivaldev㉿IParzivalDev)-[~]  
-	└─$ sudo apt-get update
+┌──(iparzivaldev㉿IParzivalDev)-[~]  
+└─$ sudo apt install mipaquete
 	
-	┌──(iparzivaldev㉿IParzivalDev)-[~]  
-	└─$ sudo apt-get upgrade
-
-	┌──(iparzivaldev㉿IParzivalDev)-[~]  
-	└─$ sudo apt install mipaquete
+┌──(iparzivaldev㉿IParzivalDev)-[~]  
+└─$ mipaquete
 	
-	┌──(iparzivaldev㉿IParzivalDev)-[~]  
-	└─$ mipaquete
-	
-	Nivel 80%
+Nivel 80%
+```
 
 ### Y MUCHO MÁS!!!
 
