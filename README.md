@@ -3,27 +3,27 @@
 
 ### HTML/CSS
     <html>
-	    <head>
-		    <title>Mi Página web</title>
-	    </head>
-	    <body>
-				<h1>Nivel: 90%</h1>
-		</body>
-		<style>
-			h1{
-				color:red;
-			}
-		</style>
+	<head>
+		<title>Mi Página web</title>
+	</head>
+	<body>
+		<h1>Nivel: 90%</h1>
+	</body>
+	<style>
+		h1{
+			color:red;
+		}
+	</style>
     </html>
 
 ### JAVASCRIPT
     const miFuncion = function() => {
-			console.log("Nivel: 70%")
+	console.log("Nivel: 70%")
 	}
 
 ### PYTHON
     def mi_funcion():
-	    print("Nivel: 87%")
+	print("Nivel: 87%")
 
 ### C++
 
