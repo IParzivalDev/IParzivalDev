@@ -4,31 +4,31 @@
 ### HTML/CSS
 ```html
 <html>
-	<head>
-		<title>Mi Página web</title>
-	</head>
-	<body>
-		<h1>Nivel: 90%</h1>
-	</body>
-	<style>
-		h1{
-			color:red;
-		}
-	</style>
+  <head>
+    <title>Mi Página web</title>
+  </head>
+  <body>
+    <h1>Nivel: 90%</h1>
+  </body>
+  <style>
+    h1{
+      color:red;
+    }
+  </style>
 </html>
 ```
 
 ### JAVASCRIPT
 ```javascript
 const miFuncion = function() => {
-	console.log("Nivel: 70%")
+  console.log("Nivel: 70%")
 }
 ```
 
 ### PYTHON
 ```
 def mi_funcion():
-	print("Nivel: 87%")
+  print("Nivel: 87%")
 ```
 
 ### C++
@@ -38,17 +38,17 @@ def mi_funcion():
 using namespace std;
 
 int main() {
-	cout << "Nivel 40%" << endl;
-	return 0;
+  cout << "Nivel 40%" << endl;
+  return 0;
 }
 ```
 
 ### JAVA
 ```java
 public class Main {
-	public static void main(String[] args) {
-		System.out.print("Nivel 40%");
-	}
+  public static void main(String[] args) {
+    System.out.print("Nivel 40%");
+  }
 }
 ```
 
