@@ -75,6 +75,13 @@ echo Nivel 40%
 Nivel 80%
 ```
 
+### RUST
+```rust
+fn main(){
+  println!("Nivel 45%")
+}
+```
+
 ### Y MUCHO MÁS!!!
 
 Si quieres contratarme puedes **contactarme** a través de mi **Discord**: [**@parzival.dev**](https://discord.com/users/812049110189342761)
