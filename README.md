@@ -82,6 +82,17 @@ fn main(){
 }
 ```
 
+### GOLANG
+```go
+package main
+
+import "fmt"
+
+func main(){
+  fmt.Println("Nivel 34%")
+}
+```
+
 ### Y MUCHO MÁS!!!
 
 Si quieres contratarme puedes **contactarme** a través de mi **Discord**: [**@parzival.dev**](https://discord.com/users/812049110189342761)
