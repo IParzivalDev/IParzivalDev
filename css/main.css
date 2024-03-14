@@ -1,0 +1,337 @@
+@media only screen and (max-width: 600px) {
+    /* Cell */
+    body{
+        background-color: #0f172a;
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+
+        position: absolute;
+        scroll-margin-top: 4rem;
+    }
+
+    section.right div.corner{
+        position: sticky;
+        top: 0;
+        background-color: #ff45458a;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.right span.project_owner{
+        display: none;
+    }
+    
+    section.left{
+        width: 100%;
+        height: 60vh;
+        overflow-y: auto;
+        padding: 1.5cm;
+    }
+    
+    section.right{
+        flex: 1; 
+        overflow-y: auto;
+    }
+    
+    section.left div.brand h1{
+        font-size: 1.6cm;
+        color: #ffffffdc !important;
+    }
+    
+    section.left div.brand p.skill{
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 0.2cm;
+        padding-bottom: 0.5cm;
+        color: #ffffffbb !important;
+    }
+    
+    section.left div.brand p.quote{
+        font-size: 18px;
+        padding-top: 0.2cm;
+        padding-bottom: 0.5cm;
+        font-weight: 200;
+        color: #ffffffbb !important;
+    }
+    
+    section.left div.brand p.quote span{
+        color: #ffffff8f !important;
+    }
+    
+    section.left nav{
+        display: none;
+    }
+    
+    section.left div.contact ul{
+        display: flex;
+    }
+    
+    section.left div.contact li{
+        margin-right: 20px;
+    }
+    
+    section.left div.contact li a i{
+        font-size: 0.9cm;
+        color: #ffffffde !important;
+    }
+    
+    section.right div#about{
+        padding: 1cm;
+    }
+    
+    section.right div#about p{
+        color: #ffffffaf !important;
+        font-size: 18px;
+        font-weight: 300 !important;
+    }
+    section.right div#about p b{
+        font-weight: 350 !important;
+    }
+    
+    section.right div#experience{
+        padding: 1cm;
+    }
+    
+    section.right div#experience div.skill{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    section.right div#experience div.skill:hover{
+        background-color: #ffffff15;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    section.right div#experience div.skill div.skill_technologies{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section.right div#experience div.skill div.skill_technologies div.skill_technology{
+        background-color: #5eff3d27;
+        padding: 10px;
+        border-radius: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    section.right div#projects{
+        padding: 0.5cm;
+    }
+    
+    section.right div#projects div.project{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        word-wrap: break-word;
+        word-break: keep-all;
+    }
+    
+    section.right div#projects div.project:hover{
+        background-color: #ffffff15;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    section.right div#projects div.project div.project_other{
+        display: flex;
+    }
+    
+    section.right div#projects div.project div.project_other div.project_stars,
+    section.right div#projects div.project div.project_other div.project_watchings,
+    section.right div#projects div.project div.project_other div.project_forks{
+        background-color: #5eff3d27;
+        padding: 10px;
+        border-radius: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (min-width: 601px) {
+    /* PC */
+    body{
+        background-color: #0f172a;
+        display: flex;
+        width: 100vw;
+    }
+
+    section.right div.corner{
+        display: none;
+    }
+    
+    section.left{
+        width: 50%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        padding: 2cm;
+        padding-left: 3.5cm;
+    }
+    
+    section.right{
+        flex: 1; 
+        padding-left: 50%;
+        overflow-y: auto;
+    }
+    
+    section.left div.brand h1{
+        font-size: 2.5cm;
+        color: #ffffffdc !important;
+    }
+    
+    section.left div.brand p.skill{
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 0.2cm;
+        padding-bottom: 0.5cm;
+        color: #ffffffbb !important;
+    }
+    
+    section.left div.brand p.quote{
+        font-size: 18px;
+        padding-top: 0.2cm;
+        padding-bottom: 0.5cm;
+        font-weight: 200;
+        color: #ffffffbb !important;
+    }
+    
+    section.left div.brand p.quote span{
+        color: #ffffff8f !important;
+    }
+    
+    section.left nav ul li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    section.left nav ul li span{
+        padding-right: 40px;
+        background-color: #ffffffad;
+    }
+    
+    section.left nav ul li p a:hover span{
+        padding-right: 80px;
+        background-color: #ffffffde;
+    }
+    
+    section.left nav ul li p a:hover{
+        color: #ffffffde !important;
+    }
+    
+    section.left nav ul li.selected p a span{
+        padding-right: 80px;
+        background-color: #ffffffde;
+    }
+    
+    section.left nav ul li.selected p a{
+        color: #ffffffde !important;
+    }
+    
+    section.left nav ul li a span{
+        margin-right: 20px;
+    }
+    
+    section.left nav ul{
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+    
+    section.left nav ul li p a{
+        font-size: 16px;
+        color: #ffffff8f !important;
+        font-weight: 500;
+    }
+    
+    section.left div.contact ul{
+        display: flex;
+    }
+    
+    section.left div.contact li{
+        margin-right: 20px;
+    }
+    
+    section.left div.contact li a i{
+        font-size: 0.9cm;
+        color: #ffffffde !important;
+    }
+    
+    section.right div#about{
+        padding: 2cm;
+    }
+    
+    section.right div#about p{
+        color: #ffffffaf !important;
+        font-size: 18px;
+        font-weight: 300 !important;
+    }
+    section.right div#about p b{
+        font-weight: 350 !important;
+    }
+    
+    section.right div#experience{
+        padding: 1cm;
+    }
+    
+    section.right div#experience div.skill{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    section.right div#experience div.skill:hover{
+        background-color: #ffffff15;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    section.right div#experience div.skill div.skill_technologies{
+        display: flex;
+    }
+    
+    section.right div#experience div.skill div.skill_technologies div.skill_technology{
+        background-color: #5eff3d27;
+        padding: 10px;
+        border-radius: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    section.right div#projects{
+        padding: 1cm;
+    }
+    
+    section.right div#projects div.project{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    section.right div#projects div.project:hover{
+        background-color: #ffffff15;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+    
+    section.right div#projects div.project div.project_other{
+        display: flex;
+    }
+    
+    section.right div#projects div.project div.project_other div.project_stars,
+    section.right div#projects div.project div.project_other div.project_watchings,
+    section.right div#projects div.project div.project_other div.project_forks{
+        background-color: #5eff3d27;
+        padding: 10px;
+        border-radius: 30px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+}
