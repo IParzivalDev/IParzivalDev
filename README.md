@@ -1,7 +1,9 @@
-# Welcome to my GitHub page!
+# Welcome to my GitHub page
+
 Hello! Welcome to my **GitHub** page, I'm **Parzival**, I have experience in various areas of **development** and **programming**!
 
-### HTML/CSS
+## HTML/CSS
+
 ```html
 <html>
   <head>
@@ -18,7 +20,8 @@ Hello! Welcome to my **GitHub** page, I'm **Parzival**, I have experience in var
 </html>
 ```
 
-### JAVASCRIPT
+## JAVASCRIPT
+
 ```javascript
 const myFunction = function() => {
   console.log("Level: 70%")
@@ -27,16 +30,18 @@ const myFunction = function() => {
 myFunction()
 ```
 
-### PYTHON
-```
+## PYTHON
+
+```py
 def my_function():
   print("Level: 87%")
 
 my_function()
 ```
 
-### C++
-```
+## C++
+
+```cpp
 #include <iostream>
 
 using namespace std;
@@ -47,7 +52,8 @@ int main() {
 }
 ```
 
-### JAVA
+## JAVA
+
 ```java
 public class Main {
   public static void main(String[] args) {
@@ -56,37 +62,41 @@ public class Main {
 }
 ```
 
-### BATCH
+## BATCH
+
 ```batch
 @echo off
 echo Level: 40%
 ```
 
-### LINUX
+## LINUX
+
 ```linux
 ┌──(iparzivaldev㉿IParzivalDev)-[~]  
 └─$ sudo apt-get update
-	
+
 ┌──(iparzivaldev㉿IParzivalDev)-[~]  
 └─$ sudo apt-get upgrade
 
 ┌──(iparzivaldev㉿IParzivalDev)-[~]  
 └─$ sudo apt install mypackage
-	
+
 ┌──(iparzivaldev㉿IParzivalDev)-[~]  
 └─$ mypackage
-	
+
 Level: 80%
 ```
 
-### RUST
+## RUST
+
 ```rust
 fn main(){
   println!("Level: 45%")
 }
 ```
 
-### GOLANG
+## GOLANG
+
 ```go
 package main
 
@@ -97,5 +107,6 @@ func main(){
 }
 ```
 
-### AND MUCH MORE!! 
+### AND MUCH MORE
+
 If you want to hire me you can **contact me** through my **Discord**: [**@parzival.dev**](https://discord.com/users/812049110189342761) Or through my website: [**iparzivaldev.github.io/IParzivalDev/**](https://iparzivaldev.github.io/IParzivalDev/)
