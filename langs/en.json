@@ -1,0 +1,24 @@
+{
+  "left_brand_title": "Parzival",
+  "left_brand_skill": "Jr. Full Stack Developer",
+  "left_nav_button_about": "<span></span>ABOUT",
+  "left_nav_button_experience": "<span></span>EXPERIENCE",
+  "left_nav_button_projects": "<span></span>PROJECTS",
+
+  "right_about_corner": "ABOUT",
+  "right_about_content": "As a programmer, I'm passionate about creating <b>innovative</b> and <b>efficient</b> solutions using the latest technologies. My experience includes both <b>front-end</b> and <b>back-end</b> development, allowing me to build <b>complete</b> and <b>functional</b> web applications. In addition to my programming skills, I'm also a <b>creative designer</b>. I love combining my technical knowledge with visually appealing aesthetics to create <b>intuitive</b> and <b>enjoyable</b> user interfaces. <br /><br /> In my free time, I enjoy going for <b>walks</b> to clear my <b>mind</b> and find <b>inspiration</b>. <b>Reading</b> is another one of my great passions. I consider it an endless source of <b>knowledge</b>, and I love diving into different topics to broaden my horizons. <br /><br /> Furthermore, I'm always seeking opportunities to learn new <b>skills</b> and stay up-to-date with the latest <b>technology</b> trends. One of my favorite learning sources is <b>YouTube</b>, where I find tutorials, conferences, and educational videos that keep me <b>informed</b>. Throughout my professional journey, I have worked on several personal projects that are currently available on my <b>GitHub profile</b>. These projects reflect my <b>dedication</b> and <b>passion</b> for programming, demonstrating my ability to tackle challenges and solve problems.",
+  "right_experience_corner": "EXPERIENCE",
+  "right_experience_content_frontend_title": "Front End Developer",
+  "right_experience_content_frontend_description": "A front-end developer is a professional responsible for the creation and maintenance of the user interface of a website or application. Their main focus is on working on the visual and interactive part of the application, which means everything that users see and directly interact with.",
+
+  "right_experience_content_backend_title": "Back End Developer",
+  "right_experience_content_backend_description": "A Back End Developer, also known as a backend developer or server-side developer, is a programming professional who focuses on creating and maintaining the \"behind-the-scenes\" part of an application or website. The backend refers to the system's component that handles data processing and storage, as well as manages the logic and functionality of the application.",
+
+  "right_experience_content_graphic_designer_title": "Graphic Designer",
+  "right_experience_content_graphic_designer_description": "A graphic designer is a professional responsible for creating and combining visual elements such as images, typography, and colors to effectively and attractively communicate messages. Their work focuses on designing graphic projects such as logos, posters, brochures, websites, mobile applications, social media, advertising, and other visual materials.",
+
+  "right_experience_content_software_developer_title": "Software Developer",
+  "right_experience_content_software_developer_description": "A software developer is a professional who is dedicated to creating, designing, and maintaining computer programs or applications. A software developer is responsible for writing computer code using different programming languages, such as Python, Java, C++, among others, to develop software that meets the established requirements and specifications.",
+
+  "right_projects_corner": "PROJECTS"
+}

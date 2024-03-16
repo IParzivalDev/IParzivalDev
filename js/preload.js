@@ -3,7 +3,40 @@
 FUNCTIONS
 ----------------
 */
-function nav_button_select(id) {
+const setProgrammerQuote = (programmerQuotes) => {
+  const randomQuote = programmerQuotes[Math.floor(Math.random() * programmerQuotes.length)];
+
+  document.querySelector("#quote").innerHTML = randomQuote;
+}
+
+const getCookie = (cookieName) => {
+  var name = cookieName + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var cookieArray = decodedCookie.split(';');
+  
+  for (var i = 0; i < cookieArray.length; i++) {
+    var cookie = cookieArray[i];
+    while (cookie.charAt(0) === ' ') {
+      cookie = cookie.substring(1);
+    }
+    if (cookie.indexOf(name) === 0) {
+      return cookie.substring(name.length, cookie.length);
+    }
+  }
+  
+  return null;
+}
+
+const changeLangTo = (lang) => {
+  for (const k in lang) {
+    if (lang.hasOwnProperty(k)) {
+      const v = lang[k];
+      document.querySelector(`#${k}`).innerHTML = v
+    }
+  }
+}
+
+const navButtonSelect = (id) => {
   switch (id) {
     case "about":
       document.querySelector("#nav_button_about").classList.add("selected");
@@ -34,36 +67,70 @@ END - FUNCTIONS
 */
 
 /*
+--------------
+TRANSLATIONS
+--------------
+*/
+if (getCookie("lang") === null) {
+  document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+  document.querySelector("#lang_selector_en").setAttribute("selected","")
+} else {
+  switch (getCookie("lang")) {
+    case "en":
+      fetch("./langs/en.json").then(response => response.json()).then(data => {
+        changeLangTo(data)
+        document.querySelector("#lang_selector_en").setAttribute("selected","")
+      })
+      break;
+    case "es":
+      fetch("./langs/es.json").then(response => response.json()).then(data => {
+        changeLangTo(data)
+        document.querySelector("#lang_selector_es").setAttribute("selected","")
+      })
+      break;
+  
+    default:
+      fetch("./langs/en.json").then(response => response.json()).then(data => {
+        changeLangTo(data)
+        document.querySelector("#lang_selector_en").setAttribute("selected","")
+      })
+      break;
+  }
+}
+
+/*
+-------------------
+END - TRANSLATIONS
+-------------------
+*/
+
+
+/*
 -------------------
 PROGRAMMER QUOTES
 -------------------
 */
-const programmerQuotes = [
-  "In the world of programming, errors are opportunities to learn and grow.",
-  "Well-written code is the best legacy a programmer can leave behind.",
-  "Creativity is the secret ingredient in the art of programming.",
-  "Patience and persistence are key to solving programming problems.",
-  "The best programs are not only functional but also elegant and easy to understand.",
-  "A programmer's success is measured by the quality of their solutions, not the quantity of lines of code.",
-  "Teamwork and collaboration are essential to building great software projects.",
-  "Every error is an opportunity to improve and strengthen your skills as a programmer.",
-  "Programming is an endless journey of discovery and constant learning.",
-  "A successful programmer is one who solves problems before they become crises.",
-  "Programming is like a giant puzzle, and each line of code is a piece that fits into place.",
-  "Curiosity is the driving force that compels a programmer to explore new technologies and innovative solutions.",
-  "Do not fear change, embrace new technologies and adapt to them to stay relevant.",
-  "Well-documented code is a gift to your future self and to the developers who come after you.",
-  "Simplicity is the key to creating powerful and easy-to-maintain software.",
-  "Programming is an art that allows you to turn abstract ideas into tangible realities.",
-  "Continuous learning is essential in programming, as technology is constantly evolving.",
-  "Passion for programming is the spark that ignites creativity and innovation.",
-  "Do not be discouraged by challenges; each obstacle overcome makes you a stronger programmer.",
-  "Success in programming is not just about writing code but about solving problems and making people's lives easier.",
-];
+if (getCookie("lang") !== null) {
+  switch (getCookie("lang")) {
+    case "en":
+      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
+        setProgrammerQuote(programmerQuotes)
+      })
+      break;
+    case "es":
+      fetch("./langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
+        setProgrammerQuote(programmerQuotes)
+      })
+      break;
+  
+    default:
+      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
+        setProgrammerQuote(programmerQuotes)
+      })
+      break;
+  }
+}
 
-const randomQuote = programmerQuotes[Math.floor(Math.random() * programmerQuotes.length)];
-
-document.querySelector("#quote").innerHTML = randomQuote;
 /*
 ------------------------
 END - PROGRAMMER QUOTES
@@ -132,7 +199,7 @@ CHANGE HASH
 window.addEventListener("hashchange", () => {
   let url = window.location.href;
   let id = url.substring(url.indexOf("#") + 1);
-  nav_button_select(id);
+  navButtonSelect(id);
 });
 /* 
 -------------------
@@ -155,7 +222,7 @@ window.addEventListener("scroll", () => {
       let rect = element.getBoundingClientRect();
 
       if (rect.top < window.innerHeight && rect.bottom > window.innerHeight) {
-        nav_button_select(id);
+        navButtonSelect(id);
       }
     }
   });
@@ -164,4 +231,42 @@ window.addEventListener("scroll", () => {
 -----------------------
 END - ON FOCUS SECTION
 -----------------------
+*/
+
+
+/* 
+--------------
+CHANGE LANG
+--------------
+*/
+const lang_selector = document.getElementById("lang_selector")
+
+lang_selector.addEventListener("change",()=>{
+  switch (lang_selector.value) {
+    case "es":
+      console.log(`Translated to ${lang_selector.value}`)
+      document.cookie = "lang=es; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+      window.location.reload()
+      break;
+
+    case "en":
+      console.log(`Translated to ${lang_selector.value}`)
+      document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+      window.location.reload()
+      break;
+  
+    default:
+      console.log(`Translated to ${lang_selector.value}`)
+      document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+      window.location.reload()
+      break;
+  }
+})
+/* 
+-------------------
+END - CHANGE LANG
+-------------------
 */

@@ -10,6 +10,21 @@
         scroll-margin-top: 4rem;
     }
 
+    
+
+    section.lang_select{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 10;
+    }
+
+    section.lang_select div.lang_button select{
+        background-color: #000;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
     section.right div.corner{
         position: sticky;
         top: 0;
@@ -159,6 +174,19 @@
         background-color: #0f172a;
         display: flex;
         width: 100vw;
+    }
+
+    section.lang_select{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        z-index: 10;
+    }
+
+    section.lang_select div.lang_button select{
+        background-color: #000;
+        padding: 10px;
+        border-radius: 5px;
     }
 
     section.right div.corner{
