@@ -1,0 +1,22 @@
+{
+  "left_nav_button_about": "<span></span>HAKIMDA",
+  "left_nav_button_experience": "<span></span>DENEYİMİM", 
+  "left_nav_button_projects": "<span></span>PROJELER",
+
+  "right_about_corner": "HAKIMDA",
+  "right_about_content": "Programör olarak, en yenî teknolojîlerî kullanarak <b>yenîlîkçî</b> ve <b>verîmlî</b> çözümler yaratmaya tutkulu olduğum. Hem <b>önyüz</b> hem de <b>arka uç</b> geliştirme deneyimim sayesinde <b>tam</b> ve <b>işlevsel</b> web uygulamaları inşa edebilme yeteneğim bulunmaktadır. Programlama becerilerimin yanı sıra, bir <b>yaratıcı tasarımcı</b> da olduğum. Teknik bilgilerimi görsel olarak çekici bir estetikle birleştirerek, kullanıcı arayüzlerini <b>sezgisel</b> ve <b>hoş</b> yapmaktan hoşlanıyorum. <br /><br /> <b>Okumak</b> benim de büyük tutkularımdan biridir. Bunu sınırsız bir <b>bilgi</b> kaynağı olarak görür ve farklı konulara derinlemesine dalıp ufuklarımı genişletmeyi severim. <br /><br /> Ayrıca her zaman yeni <b>beceriler</b> öğrenme ve <b>teknoloji</b> alanındaki son eğilimlerle aynı zamanda kalma fırsatları arayışındayım. Öğrenme kaynaklarımdan biri <b>YouTube</b> video dersleri, konferanslar ve eğitici videoları sayesinde sürekli <b>bilgilendiğimdir</b>. Mesleki kariyerim boyunca, profildimde mevcut olan kişisel projelerime odaklandığımı gösterir. Bu projeler <b>adanmışlığımı</b> ve <b>tutkumu</b> programlamaya yansıtmakta ve zorlukların üstesinden gelme yeteneğimi kanıtlamaktadır." ,
+  "right_experience_corner": "DENEYİMİM",
+  "right_experience_content_frontend_title": "Ön Uç Geliştirici",
+  "right_experience_content_frontend_description": "Bir ön uç geliştirici, bir web sitesi veya uygulamanın kullanıcı arayüzünü oluşturma ve bakımından sorumlu olan bir uzmandır. Odak noktası, kullanıcıların doğrudan gördüğü ve etkileşime geçtiği uygulamanın görsel ve etkileşimli kısmıyla ilgilenmektir.",
+
+  "right_experience_content_backend_title": "Arka Uç Geliştirici", 
+  "right_experience_content_backend_description": "Bir arka uç geliştirici, sunucu tarafı geliştiricisi olarak da bilinen, bir uygulamanın veya web sitesinin \"perde arkasındaki\" kısmını oluşturma ve bakımıyla ilgilenen bir programlama uzmanıdır. Arka uç, veri işleme ve depolama ile uygulamanın mantık ve işlevselliğinin yönetiminden sorumlu sistem bileşenini ifade eder.",
+
+  "right_experience_content_graphic_designer_title": "Grafik Tasarımcısı",
+  "right_experience_content_graphic_designer_description": "Bir grafik tasarımcısı, görsel öğeleri etkili ve çekici bir şekilde kombinleyerek iletileri iletmekle sorumlu olan bir meslektaştır. Çalışmaları, logo, afiş, broşür, web siteleri, mobil uygulamalar, sosyal medya, reklam ve diğer görsel materyallerin tasarımına odaklanır.",
+
+  "right_experience_content_software_developer_title": "Yazılım Geliştiricisi", 
+  "right_experience_content_software_developer_description": "Bir yazılım geliştiricisi, bilgisayar programları veya uygulamalarının oluşturulması, tasarlanması ve bakımıyla ilgilenen bir uzmandır. Bir yazılım geliştiricisi, Python, Java, C++ gibi farklı programlama dillerini kullanarak belirlenmiş gereksinimleri ve özellikleri karşılayacak yazılım kodlamaktan sorumludur.",
+
+  "right_projects_corner": "PROJELER"
+}

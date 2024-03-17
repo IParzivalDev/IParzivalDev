@@ -88,6 +88,13 @@ if (getCookie("lang") === null) {
         document.querySelector("#lang_selector_es").setAttribute("selected","");
       });
       break;
+
+    case "tr":
+      fetch("./langs/tr.json").then(response => response.json()).then(data => {
+        changeLangTo(data);
+        document.querySelector("#lang_selector_tr").setAttribute("selected","");
+      });
+      break;
   
     default:
       fetch("./langs/en.json").then(response => response.json()).then(data => {
@@ -117,8 +124,15 @@ if (getCookie("lang") !== null) {
         setProgrammerQuote(programmerQuotes);
       });
       break;
+
     case "es":
       fetch("./langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
+        setProgrammerQuote(programmerQuotes);
+      });
+      break;
+
+    case "tr":
+      fetch("./langs/tr_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
@@ -254,7 +268,13 @@ lang_selector.addEventListener("change",()=>{
 
       window.location.reload();
       break;
-  
+    
+    case "tr":
+      document.cookie = "lang=tr; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+      window.location.reload();
+      break;
+
     default:
       document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
