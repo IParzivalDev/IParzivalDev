@@ -10,12 +10,12 @@ const setProgrammerQuote = (programmerQuotes) => {
 }
 
 const getCookie = (cookieName) => {
-  var name = cookieName + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var cookieArray = decodedCookie.split(';');
+  let name = cookieName + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let cookieArray = decodedCookie.split(';');
   
-  for (var i = 0; i < cookieArray.length; i++) {
-    var cookie = cookieArray[i];
+  for (let i = 0; i < cookieArray.length; i++) {
+    let cookie = cookieArray[i];
     while (cookie.charAt(0) === ' ') {
       cookie = cookie.substring(1);
     }
@@ -31,7 +31,7 @@ const changeLangTo = (lang) => {
   for (const k in lang) {
     if (lang.hasOwnProperty(k)) {
       const v = lang[k];
-      document.querySelector(`#${k}`).innerHTML = v
+      document.querySelector(`#${k}`).innerHTML = v;
     }
   }
 }
@@ -73,27 +73,27 @@ TRANSLATIONS
 */
 if (getCookie("lang") === null) {
   document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  document.querySelector("#lang_selector_en").setAttribute("selected","")
+  document.querySelector("#lang_selector_en").setAttribute("selected","");
 } else {
   switch (getCookie("lang")) {
     case "en":
       fetch("./langs/en.json").then(response => response.json()).then(data => {
-        changeLangTo(data)
-        document.querySelector("#lang_selector_en").setAttribute("selected","")
-      })
+        changeLangTo(data);
+        document.querySelector("#lang_selector_en").setAttribute("selected","");
+      });
       break;
     case "es":
       fetch("./langs/es.json").then(response => response.json()).then(data => {
-        changeLangTo(data)
-        document.querySelector("#lang_selector_es").setAttribute("selected","")
-      })
+        changeLangTo(data);
+        document.querySelector("#lang_selector_es").setAttribute("selected","");
+      });
       break;
   
     default:
       fetch("./langs/en.json").then(response => response.json()).then(data => {
-        changeLangTo(data)
-        document.querySelector("#lang_selector_en").setAttribute("selected","")
-      })
+        changeLangTo(data);
+        document.querySelector("#lang_selector_en").setAttribute("selected","");
+      });
       break;
   }
 }
@@ -114,19 +114,19 @@ if (getCookie("lang") !== null) {
   switch (getCookie("lang")) {
     case "en":
       fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes)
-      })
+        setProgrammerQuote(programmerQuotes);
+      });
       break;
     case "es":
       fetch("./langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes)
-      })
+        setProgrammerQuote(programmerQuotes);
+      });
       break;
   
     default:
       fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes)
-      })
+        setProgrammerQuote(programmerQuotes);
+      });
       break;
   }
 }
@@ -239,29 +239,26 @@ END - ON FOCUS SECTION
 CHANGE LANG
 --------------
 */
-const lang_selector = document.getElementById("lang_selector")
+const lang_selector = document.getElementById("lang_selector");
 
 lang_selector.addEventListener("change",()=>{
   switch (lang_selector.value) {
     case "es":
-      console.log(`Translated to ${lang_selector.value}`)
       document.cookie = "lang=es; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
-      window.location.reload()
+      window.location.reload();
       break;
 
     case "en":
-      console.log(`Translated to ${lang_selector.value}`)
       document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
-      window.location.reload()
+      window.location.reload();
       break;
   
     default:
-      console.log(`Translated to ${lang_selector.value}`)
       document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
-      window.location.reload()
+      window.location.reload();
       break;
   }
 })

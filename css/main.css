@@ -1,3 +1,97 @@
+section.lang_select div.lang_button select{ 
+    background-color: #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section.left div.brand p.skill{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 0.2cm;
+    padding-bottom: 0.5cm;
+    color: #ffffffbb !important;
+}
+
+section.left div.brand p.quote{
+    font-size: 18px;
+    padding-top: 0.2cm;
+    padding-bottom: 0.5cm;
+    font-weight: 200;
+    color: #ffffffbb !important;
+}
+
+section.left div.brand p.quote span{
+    color: #ffffff8f !important;
+}
+
+section.left div.contact ul{
+    display: flex;
+}
+
+section.left div.contact li{
+    margin-right: 20px;
+}
+
+section.left div.contact li a i{
+    font-size: 0.9cm;
+    color: #ffffffde !important;
+}
+
+section.right div#about p{
+    color: #ffffffaf !important;
+    font-size: 18px;
+    font-weight: 300 !important;
+}
+
+section.right div#about p b{
+    font-weight: 350 !important;
+}
+
+section.right div#experience{
+    padding: 1cm;
+}
+
+section.right div#experience div.skill{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+section.right div#experience div.skill:hover{
+    background-color: #ffffff15;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+section.right div#experience div.skill div.skill_technologies div.skill_technology{
+    background-color: #5eff3d27;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+section.right div#projects div.project:hover{
+    background-color: #ffffff15;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+    
+section.right div#projects div.project div.project_other{
+    display: flex;
+}
+
+section.right div#projects div.project div.project_other div.project_stars,
+section.right div#projects div.project div.project_other div.project_watchings,
+section.right div#projects div.project div.project_other div.project_forks{
+    background-color: #5eff3d27;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 600px) {
     /* Cell */
     body{
@@ -5,24 +99,15 @@
         display: flex;
         width: 100vw;
         flex-direction: column;
-
         position: absolute;
         scroll-margin-top: 4rem;
     }
-
-    
 
     section.lang_select{
         position: fixed;
         bottom: 20px;
         right: 20px;
         z-index: 10;
-    }
-
-    section.lang_select div.lang_button select{
-        background-color: #000;
-        padding: 10px;
-        border-radius: 5px;
     }
 
     section.right div.corner{
@@ -55,84 +140,17 @@
         color: #ffffffdc !important;
     }
     
-    section.left div.brand p.skill{
-        font-size: 20px;
-        font-weight: 600;
-        padding-top: 0.2cm;
-        padding-bottom: 0.5cm;
-        color: #ffffffbb !important;
-    }
-    
-    section.left div.brand p.quote{
-        font-size: 18px;
-        padding-top: 0.2cm;
-        padding-bottom: 0.5cm;
-        font-weight: 200;
-        color: #ffffffbb !important;
-    }
-    
-    section.left div.brand p.quote span{
-        color: #ffffff8f !important;
-    }
-    
     section.left nav{
         display: none;
-    }
-    
-    section.left div.contact ul{
-        display: flex;
-    }
-    
-    section.left div.contact li{
-        margin-right: 20px;
-    }
-    
-    section.left div.contact li a i{
-        font-size: 0.9cm;
-        color: #ffffffde !important;
     }
     
     section.right div#about{
         padding: 1cm;
     }
     
-    section.right div#about p{
-        color: #ffffffaf !important;
-        font-size: 18px;
-        font-weight: 300 !important;
-    }
-    section.right div#about p b{
-        font-weight: 350 !important;
-    }
-    
-    section.right div#experience{
-        padding: 1cm;
-    }
-    
-    section.right div#experience div.skill{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 20px;
-        border-radius: 5px;
-    }
-    
-    section.right div#experience div.skill:hover{
-        background-color: #ffffff15;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-    
     section.right div#experience div.skill div.skill_technologies{
         display: flex;
         flex-wrap: wrap;
-    }
-    
-    section.right div#experience div.skill div.skill_technologies div.skill_technology{
-        background-color: #5eff3d27;
-        padding: 10px;
-        border-radius: 30px;
-        margin-right: 20px;
-        margin-top: 20px;
     }
     
     section.right div#projects{
@@ -146,26 +164,6 @@
         border-radius: 5px;
         word-wrap: break-word;
         word-break: keep-all;
-    }
-    
-    section.right div#projects div.project:hover{
-        background-color: #ffffff15;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-    
-    section.right div#projects div.project div.project_other{
-        display: flex;
-    }
-    
-    section.right div#projects div.project div.project_other div.project_stars,
-    section.right div#projects div.project div.project_other div.project_watchings,
-    section.right div#projects div.project div.project_other div.project_forks{
-        background-color: #5eff3d27;
-        padding: 10px;
-        border-radius: 30px;
-        margin-right: 20px;
-        margin-top: 20px;
     }
 }
 @media only screen and (min-width: 601px) {
@@ -181,12 +179,6 @@
         bottom: 10px;
         right: 10px;
         z-index: 10;
-    }
-
-    section.lang_select div.lang_button select{
-        background-color: #000;
-        padding: 10px;
-        border-radius: 5px;
     }
 
     section.right div.corner{
@@ -212,26 +204,6 @@
     section.left div.brand h1{
         font-size: 2.5cm;
         color: #ffffffdc !important;
-    }
-    
-    section.left div.brand p.skill{
-        font-size: 20px;
-        font-weight: 600;
-        padding-top: 0.2cm;
-        padding-bottom: 0.5cm;
-        color: #ffffffbb !important;
-    }
-    
-    section.left div.brand p.quote{
-        font-size: 18px;
-        padding-top: 0.2cm;
-        padding-bottom: 0.5cm;
-        font-weight: 200;
-        color: #ffffffbb !important;
-    }
-    
-    section.left div.brand p.quote span{
-        color: #ffffff8f !important;
     }
     
     section.left nav ul li{
@@ -277,59 +249,12 @@
         font-weight: 500;
     }
     
-    section.left div.contact ul{
-        display: flex;
-    }
-    
-    section.left div.contact li{
-        margin-right: 20px;
-    }
-    
-    section.left div.contact li a i{
-        font-size: 0.9cm;
-        color: #ffffffde !important;
-    }
-    
     section.right div#about{
         padding: 2cm;
     }
     
-    section.right div#about p{
-        color: #ffffffaf !important;
-        font-size: 18px;
-        font-weight: 300 !important;
-    }
-    section.right div#about p b{
-        font-weight: 350 !important;
-    }
-    
-    section.right div#experience{
-        padding: 1cm;
-    }
-    
-    section.right div#experience div.skill{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 20px;
-        border-radius: 5px;
-    }
-    
-    section.right div#experience div.skill:hover{
-        background-color: #ffffff15;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-    
     section.right div#experience div.skill div.skill_technologies{
         display: flex;
-    }
-    
-    section.right div#experience div.skill div.skill_technologies div.skill_technology{
-        background-color: #5eff3d27;
-        padding: 10px;
-        border-radius: 30px;
-        margin-right: 20px;
-        margin-top: 20px;
     }
     
     section.right div#projects{
@@ -341,25 +266,5 @@
         margin-bottom: 20px;
         padding: 20px;
         border-radius: 5px;
-    }
-    
-    section.right div#projects div.project:hover{
-        background-color: #ffffff15;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-    
-    section.right div#projects div.project div.project_other{
-        display: flex;
-    }
-    
-    section.right div#projects div.project div.project_other div.project_stars,
-    section.right div#projects div.project div.project_other div.project_watchings,
-    section.right div#projects div.project div.project_other div.project_forks{
-        background-color: #5eff3d27;
-        padding: 10px;
-        border-radius: 30px;
-        margin-right: 20px;
-        margin-top: 20px;
     }
 }
