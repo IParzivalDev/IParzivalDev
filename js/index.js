@@ -77,27 +77,27 @@ if (getCookie("lang") === null) {
 } else {
   switch (getCookie("lang")) {
     case "en":
-      fetch("./langs/en.json").then(response => response.json()).then(data => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en.json").then(response => response.json()).then(data => {
         changeLangTo(data);
         document.querySelector("#lang_selector_en").setAttribute("selected","");
       });
       break;
     case "es":
-      fetch("./langs/es.json").then(response => response.json()).then(data => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/es.json").then(response => response.json()).then(data => {
         changeLangTo(data);
         document.querySelector("#lang_selector_es").setAttribute("selected","");
       });
       break;
 
     case "tr":
-      fetch("./langs/tr.json").then(response => response.json()).then(data => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/tr.json").then(response => response.json()).then(data => {
         changeLangTo(data);
         document.querySelector("#lang_selector_tr").setAttribute("selected","");
       });
       break;
   
     default:
-      fetch("./langs/en.json").then(response => response.json()).then(data => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en.json").then(response => response.json()).then(data => {
         changeLangTo(data);
         document.querySelector("#lang_selector_en").setAttribute("selected","");
       });
@@ -120,25 +120,25 @@ PROGRAMMER QUOTES
 if (getCookie("lang") !== null) {
   switch (getCookie("lang")) {
     case "en":
-      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
 
     case "es":
-      fetch("./langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
 
     case "tr":
-      fetch("./langs/tr_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/tr_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
   
     default:
-      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
