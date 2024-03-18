@@ -4,9 +4,10 @@ FUNCTIONS
 ----------------
 */
 const setProgrammerQuote = (programmerQuotes) => {
+  const quote = document.querySelector("#quote");
   const randomQuote = programmerQuotes[Math.floor(Math.random() * programmerQuotes.length)];
 
-  document.querySelector("#quote").innerHTML = randomQuote;
+  quote.innerHTML = randomQuote;
 }
 
 const getCookie = (cookieName) => {
@@ -37,23 +38,26 @@ const changeLangTo = (lang) => {
 }
 
 const navButtonSelect = (id) => {
+  const navButtonAbout = document.querySelector("#nav_button_about");
+  const navButtonExperience = document.querySelector("#nav_button_experience");
+  const navButtonProjects = document.querySelector("#nav_button_projects");
   switch (id) {
     case "about":
-      document.querySelector("#nav_button_about").classList.add("selected");
-      document.querySelector("#nav_button_experience").classList.remove("selected");
-      document.querySelector("#nav_button_projects").classList.remove("selected");
+      navButtonAbout.classList.add("selected");
+      navButtonExperience.classList.remove("selected");
+      navButtonProjects.classList.remove("selected");
       break;
 
     case "experience":
-      document.querySelector("#nav_button_about").classList.remove("selected");
-      document.querySelector("#nav_button_experience").classList.add("selected");
-      document.querySelector("#nav_button_projects").classList.remove("selected");
+      navButtonAbout.classList.remove("selected");
+      navButtonExperience.classList.add("selected");
+      navButtonProjects.classList.remove("selected");
       break;
 
     case "projects":
-      document.querySelector("#nav_button_about").classList.remove("selected");
-      document.querySelector("#nav_button_experience").classList.remove("selected");
-      document.querySelector("#nav_button_projects").classList.add("selected");
+      navButtonAbout.classList.remove("selected");
+      navButtonExperience.classList.remove("selected");
+      navButtonProjects.classList.add("selected");
       break;
 
     default:
@@ -72,34 +76,38 @@ TRANSLATIONS
 --------------
 */
 if (getCookie("lang") === null) {
+  const langSelectorEn = document.querySelector("#lang_selector_en")
   document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  document.querySelector("#lang_selector_en").setAttribute("selected","");
+  langSelectorEn.setAttribute("selected","");
 } else {
+  const langSelectorEn = document.querySelector("#lang_selector_en")
+  const langSelectorEs = document.querySelector("#lang_selector_es")
+  const langSelectorTr = document.querySelector("#lang_selector_tr")
   switch (getCookie("lang")) {
     case "en":
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en.json").then(response => response.json()).then(data => {
+      fetch("./langs/en.json").then(response => response.json()).then(data => {
         changeLangTo(data);
-        document.querySelector("#lang_selector_en").setAttribute("selected","");
+        langSelectorEn.setAttribute("selected","");
       });
       break;
     case "es":
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/es.json").then(response => response.json()).then(data => {
+      fetch("./langs/es.json").then(response => response.json()).then(data => {
         changeLangTo(data);
-        document.querySelector("#lang_selector_es").setAttribute("selected","");
+        langSelectorEs.setAttribute("selected","");
       });
       break;
 
     case "tr":
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/tr.json").then(response => response.json()).then(data => {
+      fetch("./langs/tr.json").then(response => response.json()).then(data => {
         changeLangTo(data);
-        document.querySelector("#lang_selector_tr").setAttribute("selected","");
+        langSelectorTr.setAttribute("selected","");
       });
       break;
   
     default:
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en.json").then(response => response.json()).then(data => {
+      fetch("./langs/en.json").then(response => response.json()).then(data => {
         changeLangTo(data);
-        document.querySelector("#lang_selector_en").setAttribute("selected","");
+        langSelectorEn.setAttribute("selected","");
       });
       break;
   }
@@ -120,25 +128,25 @@ PROGRAMMER QUOTES
 if (getCookie("lang") !== null) {
   switch (getCookie("lang")) {
     case "en":
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
 
     case "es":
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("./langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
 
     case "tr":
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/tr_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("./langs/tr_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
   
     default:
-      fetch("https://IParzivalDev.github.io/IParzivalDev/langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
+      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
@@ -170,6 +178,7 @@ fetch("https://api.github.com/users/IParzivalDev/repos?per_page=20&page=1", {
       const watchers = repo.watchers_count;
       const forks = repo.forks_count;
       const url = repo.html_url;
+      const projects = document.querySelector("#projects");
 
       const project = document.createElement("div");
       project.innerHTML = `
@@ -195,7 +204,7 @@ fetch("https://api.github.com/users/IParzivalDev/repos?per_page=20&page=1", {
         </a>`;
       project.classList.add("project");
 
-      document.querySelector("#projects").appendChild(project);
+      projects.appendChild(project);
     }
   });
 
@@ -253,10 +262,10 @@ END - ON FOCUS SECTION
 CHANGE LANG
 --------------
 */
-const lang_selector = document.getElementById("lang_selector");
+const langSelector = document.getElementById("lang_selector");
 
-lang_selector.addEventListener("change",()=>{
-  switch (lang_selector.value) {
+langSelector.addEventListener("change",()=>{
+  switch (langSelector.value) {
     case "es":
       document.cookie = "lang=es; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
