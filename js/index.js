@@ -41,6 +41,8 @@ const navButtonSelect = (id) => {
   const navButtonAbout = document.querySelector("#nav_button_about");
   const navButtonExperience = document.querySelector("#nav_button_experience");
   const navButtonProjects = document.querySelector("#nav_button_projects");
+
+
   switch (id) {
     case "about":
       navButtonAbout.classList.add("selected");
@@ -76,13 +78,17 @@ TRANSLATIONS
 --------------
 */
 if (getCookie("lang") === null) {
-  const langSelectorEn = document.querySelector("#lang_selector_en")
+  const langSelectorEn = document.querySelector("#lang_selector_en");
+
   document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
   langSelectorEn.setAttribute("selected","");
 } else {
-  const langSelectorEn = document.querySelector("#lang_selector_en")
-  const langSelectorEs = document.querySelector("#lang_selector_es")
-  const langSelectorTr = document.querySelector("#lang_selector_tr")
+  const langSelectorEn = document.querySelector("#lang_selector_en");
+  const langSelectorEs = document.querySelector("#lang_selector_es");
+  const langSelectorTr = document.querySelector("#lang_selector_tr");
+  const langSelectorPt = document.querySelector("#lang_selector_pt");
+
+
   switch (getCookie("lang")) {
     case "en":
       fetch("./langs/en.json").then(response => response.json()).then(data => {
@@ -90,6 +96,7 @@ if (getCookie("lang") === null) {
         langSelectorEn.setAttribute("selected","");
       });
       break;
+
     case "es":
       fetch("./langs/es.json").then(response => response.json()).then(data => {
         changeLangTo(data);
@@ -101,6 +108,13 @@ if (getCookie("lang") === null) {
       fetch("./langs/tr.json").then(response => response.json()).then(data => {
         changeLangTo(data);
         langSelectorTr.setAttribute("selected","");
+      });
+      break;
+
+    case "pt":
+      fetch("./langs/pt.json").then(response => response.json()).then(data => {
+        changeLangTo(data);
+        langSelectorPt.setAttribute("selected","");
       });
       break;
   
@@ -141,6 +155,12 @@ if (getCookie("lang") !== null) {
 
     case "tr":
       fetch("./langs/tr_quotes.json").then(response => response.json()).then(programmerQuotes => {
+        setProgrammerQuote(programmerQuotes);
+      });
+      break;
+
+    case "pt":
+      fetch("./langs/pt_quotes.json").then(response => response.json()).then(programmerQuotes => {
         setProgrammerQuote(programmerQuotes);
       });
       break;
@@ -280,6 +300,12 @@ langSelector.addEventListener("change",()=>{
     
     case "tr":
       document.cookie = "lang=tr; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+
+      window.location.reload();
+      break;
+
+    case "pt":
+      document.cookie = "lang=pt; expires=Fri, 31 Dec 9999 23:59:59 GMT";
 
       window.location.reload();
       break;
