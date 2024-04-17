@@ -1,5 +1,45 @@
+:root{
+    --background:rgb(15, 23, 42);
+    --black:rgb(0,0,0);
+    --white-001:rgba(255,255,255,0.01);
+    --white-002:rgba(255,255,255,0.02);
+    --white-003:rgba(255,255,255,0.03);
+    --white-004:rgba(255,255,255,0.04);
+    --white-005:rgba(255,255,255,0.05);
+    --white-006:rgba(255,255,255,0.06);
+    --white-007:rgba(255,255,255,0.07);
+    --white-008:rgba(255,255,255,0.08);
+    --white-009:rgba(255,255,255,0.09);
+    --white-01:rgba(255, 255, 255, 0.1);
+    --white-02:rgba(255, 255, 255, 0.2);
+    --white-03:rgba(255, 255, 255, 0.3);
+    --white-04:rgba(255, 255, 255, 0.4);
+    --white-05:rgba(255, 255, 255, 0.5);
+    --white-06:rgba(255, 255, 255, 0.6);
+    --white-07:rgba(255, 255, 255, 0.7);
+    --white-08:rgba(255, 255, 255, 0.8);
+    --white-09:rgba(255, 255, 255, 0.9);
+    --white:rgba(255, 255, 255);
+
+    --badge-color:rgba(93, 255, 61, 0.05);
+    --badge-text-color:rgb(94, 234, 212);
+    --corner-color:rgba(255, 69, 69, 0.5);
+}
+
+
+hr{
+    border: 1px solid var(--white-007) !important;
+    width: 50%;
+}
+
+p.copyright{
+    color: var(--white-06) !important;
+    text-align: center;
+    margin: 10px;
+}
+
 section.lang_select div.lang_button select{ 
-    background-color: #000;
+    background-color: var(--black);
     padding: 10px;
     border-radius: 5px;
 }
@@ -9,7 +49,7 @@ section.left div.brand p.skill{
     font-weight: 600;
     padding-top: 0.2cm;
     padding-bottom: 0.5cm;
-    color: #ffffffbb !important;
+    color: var(--white-07) !important;
 }
 
 section.left div.brand p.quote{
@@ -17,11 +57,11 @@ section.left div.brand p.quote{
     padding-top: 0.2cm;
     padding-bottom: 0.5cm;
     font-weight: 200;
-    color: #ffffffbb !important;
+    color: var(--white-07) !important;
 }
 
 section.left div.brand p.quote span{
-    color: #ffffff8f !important;
+    color: var(--white-05) !important;
 }
 
 section.left div.contact ul{
@@ -34,11 +74,18 @@ section.left div.contact li{
 
 section.left div.contact li a i{
     font-size: 0.9cm;
-    color: #ffffffde !important;
+    color: var(--white-08) !important;
+}
+
+section.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 section.right div#about p{
-    color: #ffffffaf !important;
+    color: var(--white-06) !important;
     font-size: 18px;
     font-weight: 300 !important;
 }
@@ -58,22 +105,53 @@ section.right div#experience div.skill{
     border-radius: 5px;
 }
 
+section.right div#experience div.skill h2.skill_title{
+    color: var(--white-08) !important;
+}
+
+section.right div#experience div.skill p.skill_description{
+    color: var(--white-06) !important;
+}
+
 section.right div#experience div.skill:hover{
-    background-color: #ffffff15;
+    background-color: var(--white-008);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
 section.right div#experience div.skill div.skill_technologies div.skill_technology{
-    background-color: #5eff3d27;
-    padding: 10px;
+    background-color: var(--badge-color);
+    padding: 8px;
     border-radius: 30px;
-    margin-right: 20px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section.right div#experience div.skill div.skill_technologies div.skill_technology a{
+    color: var(--badge-text-color) !important;
+    font-size: 0.8em;
+}
+
+section.right div#experience div.skill div.skill_technologies{
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
+section.right div#projects div.project h1.project_name,
+section.right div#projects div.project h1.project_name span.project_owner{
+    color: var(--white-08) !important;
+}
+
+section.right div#projects div.project p.project_description{
+    color: var(--white-06) !important;
+}
+
 section.right div#projects div.project:hover{
-    background-color: #ffffff15;
+    background-color: var(--white-008);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
@@ -85,19 +163,35 @@ section.right div#projects div.project div.project_other{
 section.right div#projects div.project div.project_other div.project_stars,
 section.right div#projects div.project div.project_other div.project_watchings,
 section.right div#projects div.project div.project_other div.project_forks{
-    background-color: #5eff3d27;
+    background-color: var(--badge-color);
     padding: 10px;
     border-radius: 30px;
     margin-right: 20px;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.right div#projects div.project div.project_other div.project_stars i,
+section.right div#projects div.project div.project_other div.project_watchings i,
+section.right div#projects div.project div.project_other div.project_forks i,
+section.right div#projects div.project div.project_other div.project_stars span,
+section.right div#projects div.project div.project_other div.project_watchings span,
+section.right div#projects div.project div.project_other div.project_forks span{
+    color: var(--badge-text-color) !important;
+    font-size: 0.8em;
+}
+
+body{
+    background-color: var(--background);
+    display: flex;
+    width: 100vw;
 }
 
 @media only screen and (max-width: 600px) {
     /* Cell */
     body{
-        background-color: #0f172a;
-        display: flex;
-        width: 100vw;
         flex-direction: column;
         position: absolute;
         scroll-margin-top: 4rem;
@@ -113,7 +207,7 @@ section.right div#projects div.project div.project_other div.project_forks{
     section.right div.corner{
         position: sticky;
         top: 0;
-        background-color: #ff45458a;
+        background-color: var(--corner-color);
         padding: 20px;
         width: 100%;
         text-align: center;
@@ -137,7 +231,7 @@ section.right div#projects div.project div.project_other div.project_forks{
     
     section.left div.brand h1{
         font-size: 1.6cm;
-        color: #ffffffdc !important;
+        color: var(--white-08) !important;
     }
     
     section.left nav{
@@ -168,12 +262,6 @@ section.right div#projects div.project div.project_other div.project_forks{
 }
 @media only screen and (min-width: 601px) {
     /* PC */
-    body{
-        background-color: #0f172a;
-        display: flex;
-        width: 100vw;
-    }
-
     section.lang_select{
         position: fixed;
         bottom: 10px;
@@ -203,7 +291,7 @@ section.right div#projects div.project div.project_other div.project_forks{
     
     section.left div.brand h1{
         font-size: 2.5cm;
-        color: #ffffffdc !important;
+        color: var(--white-08) !important;
     }
     
     section.left nav ul li{
@@ -213,25 +301,25 @@ section.right div#projects div.project div.project_other div.project_forks{
     
     section.left nav ul li span{
         padding-right: 40px;
-        background-color: #ffffffad;
+        background-color: var(--white-06);
     }
     
     section.left nav ul li p a:hover span{
         padding-right: 80px;
-        background-color: #ffffffde;
+        background-color: var(--white-08);
     }
     
     section.left nav ul li p a:hover{
-        color: #ffffffde !important;
+        color: var(--white-08) !important;
     }
     
     section.left nav ul li.selected p a span{
         padding-right: 80px;
-        background-color: #ffffffde;
+        background-color: var(--white-08);
     }
     
     section.left nav ul li.selected p a{
-        color: #ffffffde !important;
+        color: var(--white-08) !important;
     }
     
     section.left nav ul li a span{
@@ -245,12 +333,17 @@ section.right div#projects div.project div.project_other div.project_forks{
     
     section.left nav ul li p a{
         font-size: 16px;
-        color: #ffffff8f !important;
+        color: var(--white-05) !important;
         font-weight: 500;
     }
     
     section.right div#about{
-        padding: 2cm;
+        width: 80%;
+        margin-top: 0.1cm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
     
     section.right div#experience div.skill div.skill_technologies{
@@ -267,4 +360,31 @@ section.right div#projects div.project div.project_other div.project_forks{
         padding: 20px;
         border-radius: 5px;
     }
+
+    section.right div#experience,
+    section.right div#projects{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    section.right div#experience div.skill,
+    section.right div#projects div.project{
+        width: 90%;
+    }
 }
+
+.cursor-light {
+    position: absolute;
+    pointer-events: none;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(0, 255, 55, 0.01);
+    box-shadow: 0 0 50px 50px rgba(0, 255, 55, 0.01);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    transition: all 0.2s ease;
+  }

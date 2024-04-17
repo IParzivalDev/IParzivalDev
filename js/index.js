@@ -264,7 +264,7 @@ window.addEventListener("scroll", () => {
     if (element) {
       let rect = element.getBoundingClientRect();
 
-      if (rect.top < window.innerHeight && rect.bottom > window.innerHeight) {
+      if (rect.bottom <= window.innerHeight || rect.top <= window.innerHeight) {
         navButtonSelect(id);
       }
     }
@@ -322,3 +322,9 @@ langSelector.addEventListener("change",()=>{
 END - CHANGE LANG
 -------------------
 */
+
+document.addEventListener('mousemove', (e) => {
+  let cursor = document.getElementById('custom-cursor');
+  cursor.style.left = e.pageX + 'px';
+  cursor.style.top = e.pageY + 'px';
+});
