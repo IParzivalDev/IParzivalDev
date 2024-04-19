@@ -1,71 +1,57 @@
+const langList = ['en', 'es', 'tr', 'pt'];
+
 /*
 ----------------
 FUNCTIONS
 ----------------
 */
 const setProgrammerQuote = (programmerQuotes) => {
-  const quote = document.querySelector("#quote");
-  const randomQuote = programmerQuotes[Math.floor(Math.random() * programmerQuotes.length)];
+    const quote = document.querySelector('#quote');
+    const randomQuote = programmerQuotes[Math.floor(Math.random() * programmerQuotes.length)];
 
-  quote.innerHTML = randomQuote;
-}
+    quote.innerHTML = randomQuote;
+};
 
 const getCookie = (cookieName) => {
-  let name = cookieName + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let cookieArray = decodedCookie.split(';');
-  
-  for (let i = 0; i < cookieArray.length; i++) {
-    let cookie = cookieArray[i];
-    while (cookie.charAt(0) === ' ') {
-      cookie = cookie.substring(1);
+    let name = cookieName + '=';
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let cookieArray = decodedCookie.split(';');
+
+    for (let i = 0; i < cookieArray.length; i++) {
+        let cookie = cookieArray[i];
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length, cookie.length);
+        }
     }
-    if (cookie.indexOf(name) === 0) {
-      return cookie.substring(name.length, cookie.length);
-    }
-  }
-  
-  return null;
-}
+
+    return null;
+};
 
 const changeLangTo = (lang) => {
-  for (const k in lang) {
-    if (lang.hasOwnProperty(k)) {
-      const v = lang[k];
-      document.querySelector(`#${k}`).innerHTML = v;
+    for (const k in lang) {
+        if (lang.hasOwnProperty(k)) {
+            const v = lang[k];
+            document.querySelector(`#${k}`).innerHTML = v;
+        }
     }
-  }
-}
+};
 
 const navButtonSelect = (id) => {
-  const navButtonAbout = document.querySelector("#nav_button_about");
-  const navButtonExperience = document.querySelector("#nav_button_experience");
-  const navButtonProjects = document.querySelector("#nav_button_projects");
+    const ids = ['about', 'experience', 'projects'];
+    const navButtons = document.querySelectorAll('#nav_button');
 
-
-  switch (id) {
-    case "about":
-      navButtonAbout.classList.add("selected");
-      navButtonExperience.classList.remove("selected");
-      navButtonProjects.classList.remove("selected");
-      break;
-
-    case "experience":
-      navButtonAbout.classList.remove("selected");
-      navButtonExperience.classList.add("selected");
-      navButtonProjects.classList.remove("selected");
-      break;
-
-    case "projects":
-      navButtonAbout.classList.remove("selected");
-      navButtonExperience.classList.remove("selected");
-      navButtonProjects.classList.add("selected");
-      break;
-
-    default:
-      break;
-  }
-}
+    if (ids.includes(id)) {
+        navButtons.forEach((navButton) => {
+            navButton.classList.remove('selected');
+            if (navButton.getAttribute('btn-id') === id) {
+                navButton.classList.add('selected');
+            }
+        });
+    }
+};
 /*
 ----------------
 END - FUNCTIONS
@@ -77,54 +63,27 @@ END - FUNCTIONS
 TRANSLATIONS
 --------------
 */
-if (getCookie("lang") === null) {
-  const langSelectorEn = document.querySelector("#lang_selector_en");
+if (getCookie('lang') === null) {
+    const langSelectorEn = document.querySelector('#lang_selector_en');
 
-  document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-  langSelectorEn.setAttribute("selected","");
+    document.cookie = 'lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+    langSelectorEn.setAttribute('selected', '');
 } else {
-  const langSelectorEn = document.querySelector("#lang_selector_en");
-  const langSelectorEs = document.querySelector("#lang_selector_es");
-  const langSelectorTr = document.querySelector("#lang_selector_tr");
-  const langSelectorPt = document.querySelector("#lang_selector_pt");
+    const langSelectors = document.querySelectorAll('.lang_select');
+    const langCookie = getCookie('lang');
 
-
-  switch (getCookie("lang")) {
-    case "en":
-      fetch("./langs/en.json").then(response => response.json()).then(data => {
-        changeLangTo(data);
-        langSelectorEn.setAttribute("selected","");
-      });
-      break;
-
-    case "es":
-      fetch("./langs/es.json").then(response => response.json()).then(data => {
-        changeLangTo(data);
-        langSelectorEs.setAttribute("selected","");
-      });
-      break;
-
-    case "tr":
-      fetch("./langs/tr.json").then(response => response.json()).then(data => {
-        changeLangTo(data);
-        langSelectorTr.setAttribute("selected","");
-      });
-      break;
-
-    case "pt":
-      fetch("./langs/pt.json").then(response => response.json()).then(data => {
-        changeLangTo(data);
-        langSelectorPt.setAttribute("selected","");
-      });
-      break;
-  
-    default:
-      fetch("./langs/en.json").then(response => response.json()).then(data => {
-        changeLangTo(data);
-        langSelectorEn.setAttribute("selected","");
-      });
-      break;
-  }
+    if (langList.includes(langCookie)) {
+        langSelectors.forEach((langSelector) => {
+            if (langSelector.getAttribute('value') === langCookie) {
+                fetch(`./langs/${langCookie}.json`)
+                    .then((response) => response.json())
+                    .then((data) => {
+                        changeLangTo(data);
+                        langSelector.setAttribute('selected', '');
+                    });
+            }
+        });
+    }
 }
 
 /*
@@ -133,44 +92,21 @@ END - TRANSLATIONS
 -------------------
 */
 
-
 /*
 -------------------
 PROGRAMMER QUOTES
 -------------------
 */
-if (getCookie("lang") !== null) {
-  switch (getCookie("lang")) {
-    case "en":
-      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes);
-      });
-      break;
-
-    case "es":
-      fetch("./langs/es_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes);
-      });
-      break;
-
-    case "tr":
-      fetch("./langs/tr_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes);
-      });
-      break;
-
-    case "pt":
-      fetch("./langs/pt_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes);
-      });
-      break;
-  
-    default:
-      fetch("./langs/en_quotes.json").then(response => response.json()).then(programmerQuotes => {
-        setProgrammerQuote(programmerQuotes);
-      });
-      break;
-  }
+if (getCookie('lang') !== null) {
+    langList.forEach((lang) => {
+        if (getCookie('lang') === lang) {
+            fetch(`./langs/${lang}_quotes.json`)
+                .then((response) => response.json())
+                .then((programmerQuotes) => {
+                    setProgrammerQuote(programmerQuotes);
+                });
+        }
+    });
 }
 
 /*
@@ -184,28 +120,29 @@ END - PROGRAMMER QUOTES
 GET GITHUB REPOS
 ------------------
 */
-fetch("https://api.github.com/users/IParzivalDev/repos?per_page=20&page=1", {
-  headers: {
-    "X-GitHub-Api-Version": "2022-11-28",
-  },
-}).then((response) => response.json())
-  .then((data) => {
-    for (const repo of data) {
-      const owner = repo.owner.login;
-      const name = repo.name;
-      const description = repo.description;
-      const stars = repo.stargazers_count;
-      const watchers = repo.watchers_count;
-      const forks = repo.forks_count;
-      const url = repo.html_url;
-      const projects = document.querySelector("#projects");
+fetch('https://api.github.com/users/IParzivalDev/repos?per_page=20&page=1', {
+    headers: {
+        'X-GitHub-Api-Version': '2022-11-28',
+    },
+})
+    .then((response) => response.json())
+    .then((data) => {
+        for (const repo of data) {
+            const owner = repo.owner.login;
+            const name = repo.name;
+            const description = repo.description;
+            const stars = repo.stargazers_count;
+            const watchers = repo.watchers_count;
+            const forks = repo.forks_count;
+            const url = repo.html_url;
+            const projects = document.querySelector('#projects');
 
-      const project = document.createElement("div");
-      project.innerHTML = `
+            const project = document.createElement('div');
+            project.innerHTML = `
         <a href="${url}" target="_blank">
-          <h1 class="project_name">
+          <h2 class="project_name">
             <span class="project_owner">${owner}/</span>${name}
-          </h1>
+          </h2>
           <p class="project_description">${description}</p>
           <div class="project_other">
             <div title="${stars} Stars" class="project_stars">
@@ -222,11 +159,11 @@ fetch("https://api.github.com/users/IParzivalDev/repos?per_page=20&page=1", {
             </div>
           </div>
         </a>`;
-      project.classList.add("project");
+            project.classList.add('project');
 
-      projects.appendChild(project);
-    }
-  });
+            projects.appendChild(project);
+        }
+    });
 
 /*
 -----------------------
@@ -239,10 +176,10 @@ END - GET GITHUB REPOS
 CHANGE HASH
 ------------
 */
-window.addEventListener("hashchange", () => {
-  let url = window.location.href;
-  let id = url.substring(url.indexOf("#") + 1);
-  navButtonSelect(id);
+window.addEventListener('hashchange', () => {
+    let url = window.location.href;
+    let id = url.substring(url.indexOf('#') + 1);
+    navButtonSelect(id);
 });
 /* 
 -------------------
@@ -255,20 +192,20 @@ END - CHANGE HASH
 ON FOCUS SECTION
 -----------------
 */
-window.addEventListener("scroll", () => {
-  let ids = ["about", "experience", "projects"];
+window.addEventListener('scroll', () => {
+    let ids = ['about', 'experience', 'projects'];
 
-  ids.forEach(function (id) {
-    let element = document.querySelector(`#${id}`);
+    ids.forEach(function (id) {
+        let element = document.querySelector(`#${id}`);
 
-    if (element) {
-      let rect = element.getBoundingClientRect();
+        if (element) {
+            let rect = element.getBoundingClientRect();
 
-      if (rect.bottom <= window.innerHeight || rect.top <= window.innerHeight) {
-        navButtonSelect(id);
-      }
-    }
-  });
+            if (rect.bottom <= window.innerHeight / 2 || rect.top <= window.innerHeight / 2) {
+                navButtonSelect(id);
+            }
+        }
+    });
 });
 /*
 -----------------------
@@ -276,47 +213,22 @@ END - ON FOCUS SECTION
 -----------------------
 */
 
-
 /* 
 --------------
 CHANGE LANG
 --------------
 */
-const langSelector = document.getElementById("lang_selector");
+const langSelector = document.getElementById('lang_selector');
 
-langSelector.addEventListener("change",()=>{
-  switch (langSelector.value) {
-    case "es":
-      document.cookie = "lang=es; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+langSelector.addEventListener('change', () => {
+    langList.forEach((lang) => {
+        if (langSelector.value === lang) {
+            document.cookie = `lang=${lang}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
 
-      window.location.reload();
-      break;
-
-    case "en":
-      document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-
-      window.location.reload();
-      break;
-    
-    case "tr":
-      document.cookie = "lang=tr; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-
-      window.location.reload();
-      break;
-
-    case "pt":
-      document.cookie = "lang=pt; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-
-      window.location.reload();
-      break;
-
-    default:
-      document.cookie = "lang=en; expires=Fri, 31 Dec 9999 23:59:59 GMT";
-
-      window.location.reload();
-      break;
-  }
-})
+            window.location.reload();
+        }
+    });
+});
 /* 
 -------------------
 END - CHANGE LANG
@@ -324,7 +236,16 @@ END - CHANGE LANG
 */
 
 document.addEventListener('mousemove', (e) => {
-  let cursor = document.getElementById('custom-cursor');
-  cursor.style.left = e.pageX + 'px';
-  cursor.style.top = e.pageY + 'px';
+    let cursor = document.getElementById('custom-cursor');
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
 });
+
+
+// si ves esto, eres guapo.
+
+// ¿Porqué sigues leyendo mi código? ¡¿Acaso quieres copiarme, EH?!.
+
+// Ya vete de aquí y escribe tu propio código bro, es malo copiar código de los demás.
+
+// ¡¿ENSERIO SIGUES LEYENDO?! nah bro, que copión. Seguro tu página web tiene puro código git clone. XDDDDDDDD.

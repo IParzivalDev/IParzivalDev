@@ -41,10 +41,10 @@
       <div class="lang_button">
         <select name="lang" id="lang_selector">
           <option disabled selected>...</option>
-          <option id="lang_selector_es" value="es">ESPAÑOL</option>
-          <option id="lang_selector_en" value="en">ENGLISH</option>
-          <option id="lang_selector_tr" value="tr">TÜRK</option>
-          <option id="lang_selector_pt" value="pt">PORTUGUÊS</option>
+          <option id="lang_selector_es" class="lang_select" value="es">ESPAÑOL</option>
+          <option id="lang_selector_en" class="lang_select" value="en">ENGLISH</option>
+          <option id="lang_selector_tr" class="lang_select" value="tr">TÜRK</option>
+          <option id="lang_selector_pt" class="lang_select" value="pt">PORTUGUÊS</option>
         </select>
       </div>
     </section>
@@ -56,17 +56,17 @@
       </div>
       <nav>
         <ul>
-          <li id="nav_button_about" class="selected">
+          <li id="nav_button" btn-id="about" class="selected nav_button_about">
             <p>
               <a href="#about" id="left_nav_button_about"><span></span>ABOUT</a>
             </p>
           </li>
-          <li id="nav_button_experience">
+          <li id="nav_button" btn-id="experience"  class="nav_button_experience">
             <p>
               <a href="#experience" id="left_nav_button_experience"><span></span>EXPERIENCE</a>
             </p>
           </li>
-          <li id="nav_button_projects">
+          <li id="nav_button" btn-id="projects"  class="nav_button_projects">
             <p>
               <a href="#projects" id="left_nav_button_projects"><span></span>PROJECTS</a>
             </p>
@@ -134,26 +134,26 @@
             the application, which means everything that users see and directly
             interact with.
           </p>
-          <div class="skill_technologies">
-            <div class="skill_technology">
+          <ul class="skill_technologies">
+            <li class="skill_technology">
               <a target="_blank" href="https://es.wikipedia.org/wiki/HTML">HTML</a>
-            </div>
-            <div class="skill_technology">
+            </li>
+            <li class="skill_technology">
               <a target="_blank" href="https://es.wikipedia.org/wiki/CSS">CSS</a>
-            </div>
-            <div class="skill_technology">
+            </li>
+            <li class="skill_technology">
               <a target="_blank" href="https://es.wikipedia.org/wiki/JavaScript">Javascript</a>
-            </div>
-            <div class="skill_technology">
+            </li>
+            <li class="skill_technology">
               <a target="_blank" href="https://react.dev/">React</a>
-            </div>
-            <div class="skill_technology">
+            </li>
+            <li class="skill_technology">
               <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
-            </div>
-            <div class="skill_technology">
+            </li>
+            <li class="skill_technology">
               <a target="_blank" href="https://www.w3schools.com/w3css/">W3.CSS</a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
         <div class="skill">
           <h2 class="skill_title" id="right_experience_content_backend_title">Back End Developer</h2>
@@ -165,26 +165,20 @@
             that handles data processing and storage, as well as manages the
             logic and functionality of the application.
           </p>
-          <div class="skill_technologies">
-            <div class="skill_technology">
-              <a target="_blank" href="https://nodejs.org/">NodeJS</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.python.org/">Python</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.php.net/">PHP</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.linux.org/">Linux</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://en.wikipedia.org/wiki/Batch_processing" >Batch</a >
-            </div>
-          </div>
+          <ul class="skill_technologies">
+            <li class="skill_technology">
+              <a target="_blank" href="https://nodejs.org/">NodeJS</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.python.org/">Python</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.php.net/">PHP</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.linux.org/">Linux</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Batch_processing" >Batch</a ></li>
+          </ul>
         </div>
         <div class="skill">
           <h2 class="skill_title" id="right_experience_content_graphic_designer_title">Graphic Designer</h2>
@@ -196,20 +190,16 @@
             brochures, websites, mobile applications, social media, advertising,
             and other visual materials.
           </p>
-          <div class="skill_technologies">
-            <div class="skill_technology">
-              <a target="_blank" href="https://inkscape.org/">Inkscape</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.blender.org/">Blender</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.blockbench.net/">Blockbench</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.figma.com/">Figma</a>
-            </div>
-          </div>
+          <ul class="skill_technologies">
+            <li class="skill_technology">
+              <a target="_blank" href="https://inkscape.org/">Inkscape</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.blender.org/">Blender</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.blockbench.net/">Blockbench</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.figma.com/">Figma</a></li>
+          </ul>
         </div>
         <div class="skill">
           <h2 class="skill_title" id="right_experience_content_software_developer_title">Software Developer</h2>
@@ -221,32 +211,24 @@
             others, to develop software that meets the established requirements
             and specifications.
           </p>
-          <div class="skill_technologies">
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.python.org/">Python</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://go.dev/">Golang</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.rust-lang.org/">Rust</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://es.wikipedia.org/wiki/C_Sharp">C#</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://cplusplus.com/">C++</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://es.wikipedia.org/wiki/JavaScript">Javascript</a>
-            </div>
-            <div class="skill_technology">
-              <a target="_blank" href="https://www.java.com">Java</a>
-            </div>
-          </div>
+          <ul class="skill_technologies">
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.python.org/">Python</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://go.dev/">Golang</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.rust-lang.org/">Rust</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.gnu.org/software/bash/">Bash</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://es.wikipedia.org/wiki/C_Sharp">C#</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://cplusplus.com/">C++</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://es.wikipedia.org/wiki/JavaScript">Javascript</a></li>
+            <li class="skill_technology">
+              <a target="_blank" href="https://www.java.com">Java</a></li>
+          </ul>
         </div>
       </div>
       <div class="corner">
@@ -262,3 +244,4 @@
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" integrity="sha256-qXBd/EfAdjOA2FGrGAG+b3YBn2tn5A6bhz+LSgYD96k=" crossorigin="anonymous"></script>
   </body>
 </html>
+<!-- Parangaricutirimícuaro -->
