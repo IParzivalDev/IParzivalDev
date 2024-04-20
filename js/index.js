@@ -123,6 +123,7 @@ GET GITHUB REPOS
 fetch('https://api.github.com/users/IParzivalDev/repos?per_page=20&page=1', {
     headers: {
         'X-GitHub-Api-Version': '2022-11-28',
+        'Authorization':'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',
     },
 })
     .then((response) => response.json())
