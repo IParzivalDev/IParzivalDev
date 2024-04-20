@@ -123,7 +123,7 @@ GET GITHUB REPOS
 fetch('https://api.github.com/users/IParzivalDev/repos?per_page=20&page=1', {
     headers: {
         'X-GitHub-Api-Version': '2022-11-28',
-        'Authorization':'Bearer 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',
+        'Authorization':'Bearer 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',
     },
 })
     .then((response) => response.json())
