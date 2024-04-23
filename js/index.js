@@ -78,7 +78,7 @@ if (getCookie('lang') === null) {
                 fetch(`./langs/${langCookie}.json`)
                     .then((response) => response.json())
                     .then((data) => {
-                        changeLangTo(data);
+                        changeLangTo(data.translation);
                         langSelector.setAttribute('selected', '');
                     });
             }
@@ -100,10 +100,10 @@ PROGRAMMER QUOTES
 if (getCookie('lang') !== null) {
     langList.forEach((lang) => {
         if (getCookie('lang') === lang) {
-            fetch(`./langs/${lang}_quotes.json`)
+            fetch(`./langs/${lang}.json`)
                 .then((response) => response.json())
                 .then((programmerQuotes) => {
-                    setProgrammerQuote(programmerQuotes);
+                    setProgrammerQuote(programmerQuotes.quotes);
                 });
         }
     });

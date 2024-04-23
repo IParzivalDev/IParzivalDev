@@ -1,22 +1,46 @@
 {
-  "left_nav_button_about": "<span></span>HAKIMDA",
-  "left_nav_button_experience": "<span></span>DENEYİMİM", 
-  "left_nav_button_projects": "<span></span>PROJELER",
-
-  "right_about_corner": "HAKIMDA",
-  "right_about_content": "Bir programcı olarak, en son teknolojileri kullanarak <b>yenilikçi</b> ve <b>verimli</b> çözümler oluşturma konusunda tutkulu olduğumu belirtmek isterim. Deneyimim hem <b>ön uç</b> hem de <b>arka uç</b> geliştirme alanlarını kapsamaktadır, bu da bana <b>tamamlanmış</b> ve <b>fonksiyonel</b> web uygulamaları inşa etme imkanı vermektedir. Programlama becerilerimin yanı sıra, aynı zamanda bir <b>yaratıcı tasarımcı</b>yım. Teknik bilgimi görsel olarak çekici estetiklerle birleştirerek, <b>anlaşılır</b> ve <b>keyifli</b> kullanıcı arayüzleri oluşturma konusunda büyük bir zevk alıyorum. <br /><br /> Ayrıca, her zaman yeni <b>beceriler</b> öğrenmek ve en son <b>teknoloji</b> trendleriyle güncel kalmak için fırsat arıyorum. Profesyonel yolculuğum boyunca, şu anda GitHub profilimde bulunan birkaç kişisel projede çalıştım. Bu projeler, programlamaya olan <b>özverim</b>i ve <b>tutkumu</b> yansıtarak, zorluklarla başa çıkma yeteneğimi ve problemleri çözme becerimi göstermektedir." ,
-  "right_experience_corner": "DENEYİMİM",
-  "right_experience_content_frontend_title": "Ön Uç Geliştirici",
-  "right_experience_content_frontend_description": "Bir ön uç geliştirici, bir web sitesi veya uygulamanın kullanıcı arayüzünü oluşturma ve bakımından sorumlu olan bir uzmandır. Odak noktası, kullanıcıların doğrudan gördüğü ve etkileşime geçtiği uygulamanın görsel ve etkileşimli kısmıyla ilgilenmektir.",
-
-  "right_experience_content_backend_title": "Arka Uç Geliştirici", 
-  "right_experience_content_backend_description": "Bir arka uç geliştirici, sunucu tarafı geliştiricisi olarak da bilinen, bir uygulamanın veya web sitesinin \"perde arkasındaki\" kısmını oluşturma ve bakımıyla ilgilenen bir programlama uzmanıdır. Arka uç, veri işleme ve depolama ile uygulamanın mantık ve işlevselliğinin yönetiminden sorumlu sistem bileşenini ifade eder.",
-
-  "right_experience_content_graphic_designer_title": "Grafik Tasarımcısı",
-  "right_experience_content_graphic_designer_description": "Bir grafik tasarımcısı, görsel öğeleri etkili ve çekici bir şekilde kombinleyerek iletileri iletmekle sorumlu olan bir meslektaştır. Çalışmaları, logo, afiş, broşür, web siteleri, mobil uygulamalar, sosyal medya, reklam ve diğer görsel materyallerin tasarımına odaklanır.",
-
-  "right_experience_content_software_developer_title": "Yazılım Geliştiricisi", 
-  "right_experience_content_software_developer_description": "Bir yazılım geliştiricisi, bilgisayar programları veya uygulamalarının oluşturulması, tasarlanması ve bakımıyla ilgilenen bir uzmandır. Bir yazılım geliştiricisi, Python, Java, C++ gibi farklı programlama dillerini kullanarak belirlenmiş gereksinimleri ve özellikleri karşılayacak yazılım kodlamaktan sorumludur.",
-
-  "right_projects_corner": "PROJELER"
+  "quotes":[
+    "Programlama dünyasında hatalar, öğrenmek ve büyümek için fırsatlardır.",
+    "İyi yazılmış kod, bir programcının bırakabileceği en iyi mirastır.",  
+    "Yaratıcılık, programlamanın sanatında gizli bir malzemesidir.",
+    "Sabır ve ısrar, programlama sorunlarını çözmede anahtar rollerdedir.",
+    "En iyi programlar yalnızca işlevsel değil, aynı zamanda sade ve anlaşılır olurlar.",  
+    "Bir programcının başarısı, çözümlerinin kalitesiyle ölçülür, kod satırı sayısıyla değil.",
+    "Takım çalışması ve iş birliği, mükemmel yazılım projeleri inşa etmek için çekirdektir.",
+    "Her hatadan bir fırsat olarak ders çıkarmak ve programcı becerilerini güçlendirmek içindir.",
+    "Programlama, sürekli keşif ve öğrenme yolculuğudur.",
+    "Başarılı bir programcı, sorunları krizlere dönüşmeden çözer.",  
+    "Programlama, parçaları yerli yerine oturan dev bir bulmacadır.",
+    "Merak, yeni teknolojileri ve yenilikçi çözümleri keşfetme isteği programcıyı iten güçtür.",
+    "Değişime korkma, yeni teknolojileri benimse ve relevansını koru.",
+    "İyi belgelendirilmiş kod, gelecek için ve senin ardından gelen geliştiriciler için bir armağandır.",
+    "Basitlik, güçlü ve kolay bakımlı yazılım yaratmak için anahtardır.",  
+    "Programlama, soyut fikirleri somut gerçekliklere dönüştürmene izin veren bir sanattır.",
+    "Sürekli öğrenme, teknolojinin sürekli evrim geçirmesi sebebiyle programlamada hayati öneme sahiptir.", 
+    "Programlamaya olan tutku, yaratıcılığı ve yenilikçiliği ateşleyen kıvılcımdır.",
+    "Zorluklardan yılma, her aşılan engel seni daha güçlü bir programcı yapar.",
+    "Programlamadaki başarı, sadece kod yazmakla sınırlı değildir, sorunları çözmek ve insanların hayatlarını kolaylaştırmaktır."
+  ],
+  "translation":{
+    "left_nav_button_about": "<span></span>HAKIMDA",
+    "left_nav_button_experience": "<span></span>DENEYİMİM", 
+    "left_nav_button_projects": "<span></span>PROJELER",
+  
+    "right_about_corner": "HAKIMDA",
+    "right_about_content": "Bir programcı olarak, en son teknolojileri kullanarak <b>yenilikçi</b> ve <b>verimli</b> çözümler oluşturma konusunda tutkulu olduğumu belirtmek isterim. Deneyimim hem <b>ön uç</b> hem de <b>arka uç</b> geliştirme alanlarını kapsamaktadır, bu da bana <b>tamamlanmış</b> ve <b>fonksiyonel</b> web uygulamaları inşa etme imkanı vermektedir. Programlama becerilerimin yanı sıra, aynı zamanda bir <b>yaratıcı tasarımcı</b>yım. Teknik bilgimi görsel olarak çekici estetiklerle birleştirerek, <b>anlaşılır</b> ve <b>keyifli</b> kullanıcı arayüzleri oluşturma konusunda büyük bir zevk alıyorum. <br /><br /> Ayrıca, her zaman yeni <b>beceriler</b> öğrenmek ve en son <b>teknoloji</b> trendleriyle güncel kalmak için fırsat arıyorum. Profesyonel yolculuğum boyunca, şu anda GitHub profilimde bulunan birkaç kişisel projede çalıştım. Bu projeler, programlamaya olan <b>özverim</b>i ve <b>tutkumu</b> yansıtarak, zorluklarla başa çıkma yeteneğimi ve problemleri çözme becerimi göstermektedir." ,
+    "right_experience_corner": "DENEYİMİM",
+    "right_experience_content_frontend_title": "Ön Uç Geliştirici",
+    "right_experience_content_frontend_description": "Bir ön uç geliştirici, bir web sitesi veya uygulamanın kullanıcı arayüzünü oluşturma ve bakımından sorumlu olan bir uzmandır. Odak noktası, kullanıcıların doğrudan gördüğü ve etkileşime geçtiği uygulamanın görsel ve etkileşimli kısmıyla ilgilenmektir.",
+  
+    "right_experience_content_backend_title": "Arka Uç Geliştirici", 
+    "right_experience_content_backend_description": "Bir arka uç geliştirici, sunucu tarafı geliştiricisi olarak da bilinen, bir uygulamanın veya web sitesinin \"perde arkasındaki\" kısmını oluşturma ve bakımıyla ilgilenen bir programlama uzmanıdır. Arka uç, veri işleme ve depolama ile uygulamanın mantık ve işlevselliğinin yönetiminden sorumlu sistem bileşenini ifade eder.",
+  
+    "right_experience_content_graphic_designer_title": "Grafik Tasarımcısı",
+    "right_experience_content_graphic_designer_description": "Bir grafik tasarımcısı, görsel öğeleri etkili ve çekici bir şekilde kombinleyerek iletileri iletmekle sorumlu olan bir meslektaştır. Çalışmaları, logo, afiş, broşür, web siteleri, mobil uygulamalar, sosyal medya, reklam ve diğer görsel materyallerin tasarımına odaklanır.",
+  
+    "right_experience_content_software_developer_title": "Yazılım Geliştiricisi", 
+    "right_experience_content_software_developer_description": "Bir yazılım geliştiricisi, bilgisayar programları veya uygulamalarının oluşturulması, tasarlanması ve bakımıyla ilgilenen bir uzmandır. Bir yazılım geliştiricisi, Python, Java, C++ gibi farklı programlama dillerini kullanarak belirlenmiş gereksinimleri ve özellikleri karşılayacak yazılım kodlamaktan sorumludur.",
+  
+    "right_projects_corner": "PROJELER"
+  }
 }

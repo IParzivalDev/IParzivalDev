@@ -1,22 +1,47 @@
 {
-  "left_nav_button_about": "<span></span>ABOUT",
-  "left_nav_button_experience": "<span></span>EXPERIENCE",
-  "left_nav_button_projects": "<span></span>PROJECTS",
+  "quotes":[
+    "In the world of programming, errors are opportunities to learn and grow.",
+    "Well-written code is the best legacy a programmer can leave behind.",
+    "Creativity is the secret ingredient in the art of programming.",
+    "Patience and persistence are key to solving programming problems.",
+    "The best programs are not only functional but also elegant and easy to understand.",
+    "A programmer's success is measured by the quality of their solutions, not the quantity of lines of code.",
+    "Teamwork and collaboration are essential to building great software projects.",
+    "Every error is an opportunity to improve and strengthen your skills as a programmer.",
+    "Programming is an endless journey of discovery and constant learning.",
+    "A successful programmer is one who solves problems before they become crises.",
+    "Programming is like a giant puzzle, and each line of code is a piece that fits into place.",
+    "Curiosity is the driving force that compels a programmer to explore new technologies and innovative solutions.",
+    "Do not fear change, embrace new technologies and adapt to them to stay relevant.",
+    "Well-documented code is a gift to your future self and to the developers who come after you.",
+    "Simplicity is the key to creating powerful and easy-to-maintain software.",
+    "Programming is an art that allows you to turn abstract ideas into tangible realities.",
+    "Continuous learning is essential in programming, as technology is constantly evolving.",
+    "Passion for programming is the spark that ignites creativity and innovation.",
+    "Do not be discouraged by challenges; each obstacle overcome makes you a stronger programmer.",
+    "Success in programming is not just about writing code but about solving problems and making people's lives easier."
+  ],
+  "translation":{
+    "left_nav_button_about": "<span></span>ABOUT",
+    "left_nav_button_experience": "<span></span>EXPERIENCE",
+    "left_nav_button_projects": "<span></span>PROJECTS",
 
-  "right_about_corner": "ABOUT",
-  "right_about_content": "As a programmer, I'm passionate about creating <b>innovative</b> and <b>efficient</b> solutions using the latest technologies. My experience includes both <b>front-end</b> and <b>back-end</b> development, allowing me to build <b>complete</b> and <b>functional</b> web applications. In addition to my programming skills, I'm also a <b>creative designer</b>. I love combining my technical knowledge with visually appealing aesthetics to create <b>intuitive</b> and <b>enjoyable</b> user interfaces. <br /><br /> Furthermore, I'm always seeking opportunities to learn new <b>skills</b> and stay up-to-date with the latest <b>technology</b> trends. Throughout my professional journey, I have worked on several personal projects that are currently available on my <b>GitHub profile</b>. These projects reflect my <b>dedication</b> and <b>passion</b> for programming, demonstrating my ability to tackle challenges and solve problems.",
-  "right_experience_corner": "EXPERIENCE",
-  "right_experience_content_frontend_title": "Front End Developer",
-  "right_experience_content_frontend_description": "A front-end developer is a professional responsible for the creation and maintenance of the user interface of a website or application. Their main focus is on working on the visual and interactive part of the application, which means everything that users see and directly interact with.",
+    "right_about_corner": "ABOUT",
+    "right_about_content": "As a programmer, I'm passionate about creating <b>innovative</b> and <b>efficient</b> solutions using the latest technologies. My experience includes both <b>front-end</b> and <b>back-end</b> development, allowing me to build <b>complete</b> and <b>functional</b> web applications. In addition to my programming skills, I'm also a <b>creative designer</b>. I love combining my technical knowledge with visually appealing aesthetics to create <b>intuitive</b> and <b>enjoyable</b> user interfaces. <br /><br /> Furthermore, I'm always seeking opportunities to learn new <b>skills</b> and stay up-to-date with the latest <b>technology</b> trends. Throughout my professional journey, I have worked on several personal projects that are currently available on my <b>GitHub profile</b>. These projects reflect my <b>dedication</b> and <b>passion</b> for programming, demonstrating my ability to tackle challenges and solve problems.",
+    "right_experience_corner": "EXPERIENCE",
+    "right_experience_content_frontend_title": "Front End Developer",
+    "right_experience_content_frontend_description": "A front-end developer is a professional responsible for the creation and maintenance of the user interface of a website or application. Their main focus is on working on the visual and interactive part of the application, which means everything that users see and directly interact with.",
 
-  "right_experience_content_backend_title": "Back End Developer",
-  "right_experience_content_backend_description": "A Back End Developer, also known as a backend developer or server-side developer, is a programming professional who focuses on creating and maintaining the \"behind-the-scenes\" part of an application or website. The backend refers to the system's component that handles data processing and storage, as well as manages the logic and functionality of the application.",
+    "right_experience_content_backend_title": "Back End Developer",
+    "right_experience_content_backend_description": "A Back End Developer, also known as a backend developer or server-side developer, is a programming professional who focuses on creating and maintaining the \"behind-the-scenes\" part of an application or website. The backend refers to the system's component that handles data processing and storage, as well as manages the logic and functionality of the application.",
 
-  "right_experience_content_graphic_designer_title": "Graphic Designer",
-  "right_experience_content_graphic_designer_description": "A graphic designer is a professional responsible for creating and combining visual elements such as images, typography, and colors to effectively and attractively communicate messages. Their work focuses on designing graphic projects such as logos, posters, brochures, websites, mobile applications, social media, advertising, and other visual materials.",
+    "right_experience_content_graphic_designer_title": "Graphic Designer",
+    "right_experience_content_graphic_designer_description": "A graphic designer is a professional responsible for creating and combining visual elements such as images, typography, and colors to effectively and attractively communicate messages. Their work focuses on designing graphic projects such as logos, posters, brochures, websites, mobile applications, social media, advertising, and other visual materials.",
 
-  "right_experience_content_software_developer_title": "Software Developer",
-  "right_experience_content_software_developer_description": "A software developer is a professional who is dedicated to creating, designing, and maintaining computer programs or applications. A software developer is responsible for writing computer code using different programming languages, such as Python, Java, C++, among others, to develop software that meets the established requirements and specifications.",
+    "right_experience_content_software_developer_title": "Software Developer",
+    "right_experience_content_software_developer_description": "A software developer is a professional who is dedicated to creating, designing, and maintaining computer programs or applications. A software developer is responsible for writing computer code using different programming languages, such as Python, Java, C++, among others, to develop software that meets the established requirements and specifications.",
 
-  "right_projects_corner": "PROJECTS"
+    "right_projects_corner": "PROJECTS"
+  }
+    
 }

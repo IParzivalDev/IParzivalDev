@@ -1,22 +1,46 @@
 {
-  "left_nav_button_about": "<span></span>SOBRE",
-  "left_nav_button_experience": "<span></span>EXPERIÊNCIA",
-  "left_nav_button_projects": "<span></span>PROJETOS",
-  
-  "right_about_corner": "SOBRE",
-  "right_about_content": "Como programador, sou apaixonado por criar soluções <b>inovadoras</b> e <b>eficientes</b> usando as tecnologias mais recentes. Minha experiência inclui tanto o desenvolvimento <b>front-end</b> quanto o <b>back-end</b>, o que me permite construir aplicações web <b>completas</b> e <b>funcionais</b>. Além das minhas habilidades de programação, também sou um <b>designer criativo</b>. Adoro combinar meu conhecimento técnico com uma estética visualmente atraente para criar interfaces de usuário <b>intuitivas</b> e <b>agradáveis</b>. <br /><br /> Além disso, estou sempre em busca de oportunidades para aprender novas <b>habilidades</b> e me manter atualizado com as últimas tendências em <b>tecnologia</b>. Ao longo da minha trajetória profissional, trabalhei em vários projetos pessoais que estão disponíveis atualmente no meu <b>perfil do GitHub</b>. Esses projetos refletem minha <b>dedicação</b> e <b>paixão</b> pela programação, demonstrando minha capacidade de enfrentar desafios e resolver problemas.",
-  "right_experience_corner": "EXPERIÊNCIA",
-  "right_experience_content_frontend_title": "Desenvolvedor Front-End",
-  "right_experience_content_frontend_description": "Um desenvolvedor front-end é um profissional responsável pela criação e manutenção da interface do usuário de um site ou aplicativo. Seu foco principal está em trabalhar na parte visual e interativa da aplicação, ou seja, tudo o que os usuários veem e interagem diretamente.",
-  
-  "right_experience_content_backend_title": "Desenvolvedor Back-End",
-  "right_experience_content_backend_description": "Um desenvolvedor back-end, também conhecido como desenvolvedor de servidor ou desenvolvedor de lado do servidor, é um profissional de programação que se concentra na criação e manutenção da parte \"nos bastidores\" de um aplicativo ou site. O back-end se refere ao componente do sistema que lida com o processamento e armazenamento de dados, além de gerenciar a lógica e a funcionalidade da aplicação.",
-  
-  "right_experience_content_graphic_designer_title": "Designer Gráfico",
-  "right_experience_content_graphic_designer_description": "Um designer gráfico é um profissional responsável por criar e combinar elementos visuais, como imagens, tipografia e cores, para comunicar mensagens de forma eficaz e atraente. Seu trabalho concentra-se no design de projetos gráficos, como logotipos, cartazes, folhetos, sites, aplicativos móveis, mídias sociais, publicidade e outros materiais visuais.",
-  
-  "right_experience_content_software_developer_title": "Desenvolvedor de Software",
-  "right_experience_content_software_developer_description": "Um desenvolvedor de software é um profissional dedicado à criação, design e manutenção de programas ou aplicativos de computador. Um desenvolvedor de software é responsável por escrever código de computador usando diferentes linguagens de programação, como Python, Java, C++, entre outras, para desenvolver software que atenda aos requisitos e especificações estabelecidos.",
-  
-  "right_projects_corner": "PROJETOS"
+  "quotes":[
+    "No mundo da programação, os erros são oportunidades para aprender e crescer.",
+    "Código bem escrito é o melhor legado que um programador pode deixar.",
+    "A criatividade é o ingrediente secreto na arte da programação.",
+    "Paciência e persistência são fundamentais para resolver problemas de programação.",
+    "Os melhores programas não são apenas funcionais, mas também elegantes e fáceis de entender.",
+    "O sucesso de um programador é medido pela qualidade de suas soluções, não pela quantidade de linhas de código.",
+    "Trabalho em equipe e colaboração são essenciais para construir ótimos projetos de software.",
+    "Cada erro é uma oportunidade para melhorar e fortalecer suas habilidades como programador.",
+    "A programação é uma jornada infinita de descoberta e aprendizado constante.",
+    "Um programador bem-sucedido é aquele que resolve problemas antes que eles se tornem crises.",
+    "A programação é como um quebra-cabeças gigante, e cada linha de código é uma peça que se encaixa no lugar.",
+    "A curiosidade é a força motriz que leva um programador a explorar novas tecnologias e soluções inovadoras.",
+    "Não tenha medo da mudança, abrace novas tecnologias e adapte-se a elas para se manter relevante.",
+    "Código bem documentado é um presente para o seu eu do futuro e para os desenvolvedores que virão depois de você.",
+    "A simplicidade é a chave para criar software poderoso e fácil de manter.",
+    "A programação é uma arte que permite transformar ideias abstratas em realidades tangíveis.",
+    "A aprendizagem contínua é essencial na programação, pois a tecnologia está em constante evolução.",
+    "A paixão pela programação é a faísca que acende a criatividade e a inovação.",
+    "Não se desanime com os desafios; cada obstáculo superado o torna um programador mais forte.",
+    "O sucesso na programação não se resume apenas a escrever código, mas a resolver problemas e facilitar a vida das pessoas."
+  ],
+  "translation":{
+    "left_nav_button_about": "<span></span>SOBRE",
+    "left_nav_button_experience": "<span></span>EXPERIÊNCIA",
+    "left_nav_button_projects": "<span></span>PROJETOS",
+    
+    "right_about_corner": "SOBRE",
+    "right_about_content": "Como programador, sou apaixonado por criar soluções <b>inovadoras</b> e <b>eficientes</b> usando as tecnologias mais recentes. Minha experiência inclui tanto o desenvolvimento <b>front-end</b> quanto o <b>back-end</b>, o que me permite construir aplicações web <b>completas</b> e <b>funcionais</b>. Além das minhas habilidades de programação, também sou um <b>designer criativo</b>. Adoro combinar meu conhecimento técnico com uma estética visualmente atraente para criar interfaces de usuário <b>intuitivas</b> e <b>agradáveis</b>. <br /><br /> Além disso, estou sempre em busca de oportunidades para aprender novas <b>habilidades</b> e me manter atualizado com as últimas tendências em <b>tecnologia</b>. Ao longo da minha trajetória profissional, trabalhei em vários projetos pessoais que estão disponíveis atualmente no meu <b>perfil do GitHub</b>. Esses projetos refletem minha <b>dedicação</b> e <b>paixão</b> pela programação, demonstrando minha capacidade de enfrentar desafios e resolver problemas.",
+    "right_experience_corner": "EXPERIÊNCIA",
+    "right_experience_content_frontend_title": "Desenvolvedor Front-End",
+    "right_experience_content_frontend_description": "Um desenvolvedor front-end é um profissional responsável pela criação e manutenção da interface do usuário de um site ou aplicativo. Seu foco principal está em trabalhar na parte visual e interativa da aplicação, ou seja, tudo o que os usuários veem e interagem diretamente.",
+    
+    "right_experience_content_backend_title": "Desenvolvedor Back-End",
+    "right_experience_content_backend_description": "Um desenvolvedor back-end, também conhecido como desenvolvedor de servidor ou desenvolvedor de lado do servidor, é um profissional de programação que se concentra na criação e manutenção da parte \"nos bastidores\" de um aplicativo ou site. O back-end se refere ao componente do sistema que lida com o processamento e armazenamento de dados, além de gerenciar a lógica e a funcionalidade da aplicação.",
+    
+    "right_experience_content_graphic_designer_title": "Designer Gráfico",
+    "right_experience_content_graphic_designer_description": "Um designer gráfico é um profissional responsável por criar e combinar elementos visuais, como imagens, tipografia e cores, para comunicar mensagens de forma eficaz e atraente. Seu trabalho concentra-se no design de projetos gráficos, como logotipos, cartazes, folhetos, sites, aplicativos móveis, mídias sociais, publicidade e outros materiais visuais.",
+    
+    "right_experience_content_software_developer_title": "Desenvolvedor de Software",
+    "right_experience_content_software_developer_description": "Um desenvolvedor de software é um profissional dedicado à criação, design e manutenção de programas ou aplicativos de computador. Um desenvolvedor de software é responsável por escrever código de computador usando diferentes linguagens de programação, como Python, Java, C++, entre outras, para desenvolver software que atenda aos requisitos e especificações estabelecidos.",
+    
+    "right_projects_corner": "PROJETOS"
+  }
 }
