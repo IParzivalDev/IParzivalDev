@@ -28,19 +28,24 @@
   
     "right_about_corner": "HAKIMDA",
     "right_about_content": "Bir programcı olarak, en son teknolojileri kullanarak <b>yenilikçi</b> ve <b>verimli</b> çözümler oluşturma konusunda tutkulu olduğumu belirtmek isterim. Deneyimim hem <b>ön uç</b> hem de <b>arka uç</b> geliştirme alanlarını kapsamaktadır, bu da bana <b>tamamlanmış</b> ve <b>fonksiyonel</b> web uygulamaları inşa etme imkanı vermektedir. Programlama becerilerimin yanı sıra, aynı zamanda bir <b>yaratıcı tasarımcı</b>yım. Teknik bilgimi görsel olarak çekici estetiklerle birleştirerek, <b>anlaşılır</b> ve <b>keyifli</b> kullanıcı arayüzleri oluşturma konusunda büyük bir zevk alıyorum. <br /><br /> Ayrıca, her zaman yeni <b>beceriler</b> öğrenmek ve en son <b>teknoloji</b> trendleriyle güncel kalmak için fırsat arıyorum. Profesyonel yolculuğum boyunca, şu anda GitHub profilimde bulunan birkaç kişisel projede çalıştım. Bu projeler, programlamaya olan <b>özverim</b>i ve <b>tutkumu</b> yansıtarak, zorluklarla başa çıkma yeteneğimi ve problemleri çözme becerimi göstermektedir." ,
+    
     "right_experience_corner": "DENEYİMİM",
-    "right_experience_content_frontend_title": "Ön Uç Geliştirici",
-    "right_experience_content_frontend_description": "Bir ön uç geliştirici, bir web sitesi veya uygulamanın kullanıcı arayüzünü oluşturma ve bakımından sorumlu olan bir uzmandır. Odak noktası, kullanıcıların doğrudan gördüğü ve etkileşime geçtiği uygulamanın görsel ve etkileşimli kısmıyla ilgilenmektir.",
-  
-    "right_experience_content_backend_title": "Arka Uç Geliştirici", 
-    "right_experience_content_backend_description": "Bir arka uç geliştirici, sunucu tarafı geliştiricisi olarak da bilinen, bir uygulamanın veya web sitesinin \"perde arkasındaki\" kısmını oluşturma ve bakımıyla ilgilenen bir programlama uzmanıdır. Arka uç, veri işleme ve depolama ile uygulamanın mantık ve işlevselliğinin yönetiminden sorumlu sistem bileşenini ifade eder.",
-  
-    "right_experience_content_graphic_designer_title": "Grafik Tasarımcısı",
-    "right_experience_content_graphic_designer_description": "Bir grafik tasarımcısı, görsel öğeleri etkili ve çekici bir şekilde kombinleyerek iletileri iletmekle sorumlu olan bir meslektaştır. Çalışmaları, logo, afiş, broşür, web siteleri, mobil uygulamalar, sosyal medya, reklam ve diğer görsel materyallerin tasarımına odaklanır.",
-  
-    "right_experience_content_software_developer_title": "Yazılım Geliştiricisi", 
-    "right_experience_content_software_developer_description": "Bir yazılım geliştiricisi, bilgisayar programları veya uygulamalarının oluşturulması, tasarlanması ve bakımıyla ilgilenen bir uzmandır. Bir yazılım geliştiricisi, Python, Java, C++ gibi farklı programlama dillerini kullanarak belirlenmiş gereksinimleri ve özellikleri karşılayacak yazılım kodlamaktan sorumludur.",
-  
+
+    "right_experience_content_frontend_title": "Front-End Geliştirici",
+    "right_experience_content_frontend_description": "Front-End geliştirici olarak, müşteri tarafından kullanılabilen kullanıcı arayüzlerini tasarlamak ve programlamaktan sorumluyum. UX/UI konusunda deneyime sahibim ve yeni ve yenilikçi şeyler oluşturmayı seviyorum.",
+      
+    "right_experience_content_backend_title": "Back-End Geliştirici",
+    "right_experience_content_backend_description": "Back-End geliştirici olarak, sunucu tarafında sistemleri yönetmek için yazılım oluşturuyorum. Tamamen optimize edilmiş Front-End sistemlere işlevsellik sağlıyorum. Ayrıca, MySQL, SQlite3 ve PostgreSQL gibi veritabanlarını kullanma konusunda deneyimim var.",
+      
+    "right_experience_content_graphic_designer_title": "Grafik Tasarımcı",
+    "right_experience_content_graphic_designer_description": "Grafik tasarımcı olarak, logolar, bannerlar, web sayfaları ve daha fazlası için tasarımlar oluşturuyorum. İzleyiciye daha iyi bir görsel deneyim sağlamak için modern ve minimalist tasarımlardan ilham alıyorum.",
+      
+    "right_experience_content_software_developer_title": "Yazılım Geliştirici",
+    "right_experience_content_software_developer_description": "Yazılım geliştirici olarak, genel olarak yazılım programları oluşturmak için sorumluyum. Web, masaüstü ve mobil uygulamaların yanı sıra, Python ve Javascript gibi dillerde API'ler, kütüphaneler ve diğer arka uç uygulamaları oluşturuyorum.",
+      
+    "right_experience_content_mc_config_title": "Minecraft Sunucu Yapılandırıcısı",
+    "right_experience_content_mc_config_description": "Ayrıca, Minecraft sunucuları/network'lerin yapılandırılması konusunda uzmanım. Ücretli ve ücretsiz birçok araç ve eklenti kullanarak çalışıyorum. Şu anda sürekli geliştirilen bir proje olan <a href='https://discord.gg/zwxA943T58' target='_blank'>Democracy Network</a>'te çalışıyorum ve Developer veya Yapılandırıcı pozisyonundayım.",
+    
     "right_projects_corner": "PROJELER"
   }
 }

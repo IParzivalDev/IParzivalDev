@@ -28,19 +28,24 @@
   
     "right_about_corner": "SOBRE MÍ",
     "right_about_content": "Como programador, soy apasionado de crear soluciones <b>innovadoras</b> y <b>eficientes</b> utilizando las últimas tecnologías. Mi experiencia incluye tanto el desarrollo <b>front-end</b> como el <b>back-end</b>, lo que me permite construir aplicaciones web <b>completas</b> y <b>funcionales</b>. Además de mis habilidades de programación, también soy un <b>diseñador creativo</b>. Me encanta combinar mis conocimientos técnicos con una estética visualmente atractiva para crear interfaces de usuario <b>intuitivas</b> y <b>agradables</b>. <br /><br /> Además, siempre estoy buscando oportunidades para aprender nuevas <b>habilidades</b> y estar al día con las últimas tendencias en <b>tecnología</b>. A lo largo de mi trayectoria profesional, he trabajado en varios proyectos personales que están disponibles en mi <b>perfil de GitHub</b>. Estos proyectos reflejan mi <b>dedicación</b> y <b>pasión</b> por la programación, demostrando mi capacidad para enfrentar desafíos y resolver problemas.",
+    
     "right_experience_corner": "EXPERIENCIA",
+    
     "right_experience_content_frontend_title": "Desarrollador Front-end",
-    "right_experience_content_frontend_description": "Un desarrollador front-end es un profesional responsable de la creación y mantenimiento de la interfaz de usuario de un sitio web o aplicación. Su enfoque principal se centra en trabajar en la parte visual e interactiva de la aplicación, es decir, todo lo que los usuarios ven y con lo que interactúan directamente.",
+    "right_experience_content_frontend_description": "Como desarrollador Front-End, me encargo de diseñar y programar interfaces de usuario que puedan ser usadas desde el cliente, tengo experiencia en UX/UI y me encanta crear cosas nuevas e innovadoras.",
   
     "right_experience_content_backend_title": "Desarrollador Back-end",
-    "right_experience_content_backend_description": "Un desarrollador back-end, también conocido como desarrollador de lado del servidor, es un profesional de la programación que se enfoca en crear y mantener la parte \"detrás de escena\" de una aplicación o sitio web. El back-end se refiere al componente del sistema que maneja el procesamiento y almacenamiento de datos, así como la gestión de la lógica y funcionalidad de la aplicación.",
+    "right_experience_content_backend_description": "Como desarrollador Back-End me encargo de crear software encargado de manejar sistemas por el lado del servidor, darle funcionalidades a sistemas Front-End 100% optimizado; además tengo experiencia manejando Bases de Datos como MySQL, SQlite3 y PostgreSQL.",
   
     "right_experience_content_graphic_designer_title": "Diseñador Gráfico",
-    "right_experience_content_graphic_designer_description": "Un diseñador gráfico es un profesional responsable de crear y combinar elementos visuales como imágenes, tipografía y colores para comunicar mensajes de manera efectiva y atractiva. Su trabajo se enfoca en diseñar proyectos gráficos como logotipos, carteles, folletos, sitios web, aplicaciones móviles, redes sociales, publicidad y otros materiales visuales.",
+    "right_experience_content_graphic_designer_description": "Como diseñador gráfico me encargo de crear diseños de logotipos, banners, páginas web y mucho más. Me inspiro en diseños modernos y minimalistas para dar una mejor experiencia visual al espectador.",
   
     "right_experience_content_software_developer_title": "Desarrollador de Software",
-    "right_experience_content_software_developer_description": "Un desarrollador de software es un profesional dedicado a crear, diseñar y mantener programas o aplicaciones informáticas. Un desarrollador de software es responsable de escribir código informático utilizando diferentes lenguajes de programación, como Python, Java, C++, entre otros, para desarrollar software que cumpla con los requisitos y especificaciones establecidos.",
+    "right_experience_content_software_developer_description": "Como desarrollador de Software soy responsable de crear programas informáticos para el software en general, aplicaciones web, de escritorio y moviles; además crear aplicaciones back-end como APIs, librerías de Python y Javascript, entre otras.",
   
+    "right_experience_content_mc_config_title": "Configurador de servidores de Minecraft",
+    "right_experience_content_mc_config_description": "Además me especializo en la creación de Servidores/Networks de Minecraft, usando una amplia variedad de herramientas y plugins tanto de paga como gratuitos, actualmente estoy trabajando en un proyecto llamdo <a href='https://discord.gg/zwxA943T58' target='_blank'>Democracy Network</a>, una Network de Minecraft en desarrollo constante en la que ocupo actualmente el puesto de Developer o Configurador. ",
+
     "right_projects_corner": "PROYECTOS"
   }
 }

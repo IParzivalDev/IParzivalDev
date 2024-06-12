@@ -28,19 +28,24 @@
 
     "right_about_corner": "ABOUT",
     "right_about_content": "As a programmer, I'm passionate about creating <b>innovative</b> and <b>efficient</b> solutions using the latest technologies. My experience includes both <b>front-end</b> and <b>back-end</b> development, allowing me to build <b>complete</b> and <b>functional</b> web applications. In addition to my programming skills, I'm also a <b>creative designer</b>. I love combining my technical knowledge with visually appealing aesthetics to create <b>intuitive</b> and <b>enjoyable</b> user interfaces. <br /><br /> Furthermore, I'm always seeking opportunities to learn new <b>skills</b> and stay up-to-date with the latest <b>technology</b> trends. Throughout my professional journey, I have worked on several personal projects that are currently available on my <b>GitHub profile</b>. These projects reflect my <b>dedication</b> and <b>passion</b> for programming, demonstrating my ability to tackle challenges and solve problems.",
+    
     "right_experience_corner": "EXPERIENCE",
-    "right_experience_content_frontend_title": "Front End Developer",
-    "right_experience_content_frontend_description": "A front-end developer is a professional responsible for the creation and maintenance of the user interface of a website or application. Their main focus is on working on the visual and interactive part of the application, which means everything that users see and directly interact with.",
-
-    "right_experience_content_backend_title": "Back End Developer",
-    "right_experience_content_backend_description": "A Back End Developer, also known as a backend developer or server-side developer, is a programming professional who focuses on creating and maintaining the \"behind-the-scenes\" part of an application or website. The backend refers to the system's component that handles data processing and storage, as well as manages the logic and functionality of the application.",
-
+    
+    "right_experience_content_frontend_title": "Front-end Developer",
+    "right_experience_content_frontend_description": "As a Front-End developer, I'm responsible for designing and programming user interfaces that can be used by the client. I have experience in UX/UI and I love creating new and innovative things.",
+      
+    "right_experience_content_backend_title": "Back-end Developer",
+    "right_experience_content_backend_description": "As a Back-End developer, I'm responsible for creating software that handles server-side systems and provides functionality to fully optimized Front-End systems. I also have experience in working with databases like MySQL, SQLite3, and PostgreSQL.",
+      
     "right_experience_content_graphic_designer_title": "Graphic Designer",
-    "right_experience_content_graphic_designer_description": "A graphic designer is a professional responsible for creating and combining visual elements such as images, typography, and colors to effectively and attractively communicate messages. Their work focuses on designing graphic projects such as logos, posters, brochures, websites, mobile applications, social media, advertising, and other visual materials.",
-
+    "right_experience_content_graphic_designer_description": "As a graphic designer, I'm responsible for creating designs for logos, banners, web pages, and much more. I draw inspiration from modern and minimalist designs to provide a better visual experience to the viewer.",
+      
     "right_experience_content_software_developer_title": "Software Developer",
-    "right_experience_content_software_developer_description": "A software developer is a professional who is dedicated to creating, designing, and maintaining computer programs or applications. A software developer is responsible for writing computer code using different programming languages, such as Python, Java, C++, among others, to develop software that meets the established requirements and specifications.",
-
+    "right_experience_content_software_developer_description": "As a software developer, I'm responsible for creating computer programs for general software, web applications, desktop applications, and mobile applications. I also create back-end applications such as APIs, Python and JavaScript libraries, among others.",
+      
+    "right_experience_content_mc_config_title": "Minecraft Server Configurator",
+    "right_experience_content_mc_config_description": "Additionally, I specialize in creating Minecraft Servers/Networks using a wide variety of paid and free tools and plugins. Currently, I'm working on a project called <a href='https://discord.gg/zwxA943T58' target='_blank'>Democracy Network</a>, a constantly evolving Minecraft Network where I currently hold the role of Developer or Configurator.",
+    
     "right_projects_corner": "PROJECTS"
   }
     
